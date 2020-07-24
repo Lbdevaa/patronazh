@@ -1,5 +1,6 @@
-$(function() {
-
-	// Custom JS
-
+$(function () {
+  // Custom JS
+  $(".reviews__slider").slick({
+    dots: true,
+  });
 });

@@ -13,21 +13,26 @@ body
 	opacity: 1
 	font-weight: normal
 
-@function em($pixels, $context: 16px) 
-  @return #{$pixels/$context}em
+@function em($pixels, $context: 16px)
+	@return #{$pixels/$context}em
 
-@function rem($pixels, $context: 16px) 
-  @return #{$pixels/$context}rem
+@function rem($pixels, $context: 16px)
+	@return #{$pixels/$context}rem
 
-.grid 
+.grid
 	display: grid
 
-.container 
+.container
 	margin: auto
-	max-width: 1200px
+	max-width: 1320px
 	padding: 0 20px
 
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+.text-blue
+	color: $blue
+.text-underline
+	text-decoration: underline

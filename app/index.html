@@ -21,71 +21,120 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header__top-line">
-				<a href="" class="header__logo-box"><img src="" alt="" class="header__logo img-responsive"></a>
+			<div class="header__top-line grid">
+				<a href="" class="header__logo-box"><img src="img/logo.jpg" alt="" class="header__logo img-responsive"></a>
 				<p class="header__info">Сервис поиска специалистов и работодателей в сфере по уходу за лежачими больными</p>
 				<div class="phone-box">
-					<a href="#" class="phone-box__call">+7 (800) 233-33-33</a>
+					<a href="tel:+7 (800) 233-33-33" class="phone-box__call"> <i class="icon-phone-big phone-box__icon-phone-big"></i> +7 (800) 233-33-33</a>
 				</div>
-				<a href="#" class="main-btn">Подать объявление</a>
+				<a href="#" class="header__btn main-btn">Подать объявление</a>
 			</div> 
+		</div>
 		<div class="header__bot-line">
-			<ul class="nav">
-				<li class="nav__item"><a href="#" class="nav__url">Главная</a></li>
-				<li class="nav__item"><a href="#" class="nav__url">Специалисты</a></li>
-				<li class="nav__item"><a href="#" class="nav__url">Отдам даром</a></li>
-				<li class="nav__item"><a href="#" class="nav__url">Как пользоваться</a></li>  
-				<li class="nav__item"><a href="#" class="nav__url">Ещё</a>
-					<ul class="second-nav">
-						<li class="second-nav__item"><a href="#" class="second-nav__url">О сервисе</a></li>
-						<li class="second-nav__item"><a href="#" class="second-nav__url">Отзывы</a></li>
-						<li class="second-nav__item"><a href="#" class="second-nav__url">Контакты</a></li>
-						<li class="second-nav__item"><a href="#" class="second-nav__url">Помощь</a></li> 
-					</ul>
-				</li>
-			</ul>
+			<div class="container">
+				<ul class="nav">
+					<li class="nav__item"><a href="#" class="nav__url">Главная</a></li>
+					<li class="nav__item"><a href="#" class="nav__url">Специалисты</a></li>
+					<li class="nav__item"><a href="#" class="nav__url">Отдам даром</a></li>
+					<li class="nav__item"><a href="#" class="nav__url">Как пользоваться</a></li>  
+					<li class="nav__item arrow-more"><a href="#" class="nav__url">Ещё</a>
+						<ul class="second-nav">
+							<li class="second-nav__item"><a href="#" class="second-nav__url">О сервисе</a></li>
+							<li class="second-nav__item"><a href="#" class="second-nav__url">Отзывы</a></li>
+							<li class="second-nav__item"><a href="#" class="second-nav__url">Контакты</a></li>
+							<li class="second-nav__item"><a href="#" class="second-nav__url">Помощь</a></li> 
+						</ul>
+					</li>
+				</ul>
+				<div class="autorize">
+					<a href="#" class="autorize__url">Регистрация</a>
+					<a href="#" class="autorize__url">Вход</a>
+				</div>
+			</div>
+		</div> 
+	</header>
+	<header class="header--mobile">
+		<div class="container grid">
+			<a href="" class="header__logo-box"><img src="img/logo.jpg" alt="" class="header__logo img-responsive"></a>
 			<div class="autorize">
-				<a href="#" class="autorize__url">Регистрация</a>
 				<a href="#" class="autorize__url">Вход</a>
+				<a href="#" class="autorize__url">Регистрация</a>
+			</div>
+			<button class="burger-menu">
+				<span class="burger-menu__line"></span>
+			</button>
+			<div class="mobile-menu"> 
+				<div class="mobile-menu__box grid"> 	
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__url">Главная</a></li>
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__url">Специалисты</a></li>
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__url">Отдам даром</a> </li>
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__url">Как пользоваться</a> </li>
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__url">О сервисе</a> </li>
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__url">Отзывы</a> </li>
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__url">Контакты</a> </li>
+						<li class="mobile-menu__item"><a href="#" class="mobile-menu__url">Помощь</a> </li>
+					</ul>
+					<div class="mobile-menu__phone-box">
+						<a href="tel:+7 (800) 233-33-33" class="mobile-menu__phone"> <i class="icon-phone-big mobile-menu__icon-phone-big"></i> +7 (800) 233-33-33</a>
+						<a href="#" class="mobile-menu__btn main-btn">Подать объявление</a>
+					</div>
+					<div class="mobile-menu__more">
+						<a href="#" class="mobile-menu__text text">Политика конфиденциальности</a>
+						<p class="mobile-menu__text text">© ООО «Название компании»</p>
+						<p class="mobile-menu__text text">Разработка сайта: invite</p>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
 	</header>
 	<section class="main-banner">
 		<div class="container">
-			<h1 class="main-banner__title"> <span class="text-blue">Найдите</span>  для своих
-				близких квалифицированного <span class="text-blue">специалиста</span> или <span class="text-blue">разместите</span>
+			<h1 class="main-banner__title title"> <span class="text-blue">Найдите</span>  для своих
+				близких  <span class="text-blue">специалиста</span> или <span class="text-blue">разместите</span>
 				своё <span class="text-blue">резюме</span></h1>
-			<p class="main-banner__text">На прямую, без посредников и по лучшей цене</p>
+			<p class="main-banner__text ">На прямую, без посредников и по лучшей цене</p>
 			<a href="#" class="main-banner__btn main-btn">Создать резюме</a>
 			<a href="#" class="main-banner__btn main-btn">Найти специалиста</a>
 		</div>
 	</section>
 	<section class="short-banner">
-		<h2 class="short-banner__title section-title">С помощью <span class="text-blue">нашего сервиса</span></h2>
-		<div class="short-banner__card">
-			<img src="" alt="" class="short-banner__card-img img-responsive">
-			<p class="short-banner__card-text">Вы находите работу или специалистов без посредников</p>
-		</div>
-		<div class="short-banner__card">
-			<img src="" alt="" class="short-banner__card-img img-responsive">
-			<p class="short-banner__card-text">Сами выбирайте удобную вам цену, выполняя услуги</p>
-		</div>
-		<div class="short-banner__card">
-			<img src="" alt="" class="short-banner__card-img img-responsive">
-			<p class="short-banner__card-text">Сохраняете до 60% средств,
-				так как работаете напрямую</p>
+		<div class="container"> 
+			<h2 class="short-banner__title section-title">С помощью <span class="text-blue">нашего сервиса</span></h2>
+			<div class="short-banner__cards grid"> 
+				<div class="short-banner__card">
+					<div class="short-banner__img-box">
+						<img src="img/icon-doc.svg" alt="" class="short-banner__card-img img-responsive">
+					</div>
+					<p class="short-banner__card-text text">Вы находите работу или специалистов без посредников</p>
+				</div>
+				<div class="short-banner__card">
+					<div class="short-banner__img-box">
+						<img src="img/icon-man-like.svg" alt="" class="short-banner__card-img img-responsive">
+					</div>
+					<p class="short-banner__card-text text">Сами выбирайте удобную вам цену, выполняя услуги</p>
+				</div>
+				<div class="short-banner__card">
+					<div class="short-banner__img-box">
+						<img src="img/icon-phone.svg" alt="" class="short-banner__card-img img-responsive">
+					</div>
+					<p class="short-banner__card-text text">Сохраняете до 60% средств,
+						так как работаете напрямую</p>
+				</div>  
+			</div>
 		</div>
 	</section>
 	<section class="section-about">
-		<div class="container">
-			<div class="section-about__img-box"></div>
+		<div class="container grid">
+			<div class="section-about__img-box">
+				<img src="img/about-project.png" alt="" class="section-about__img img-responsive">
+			</div>
 			<div class="section-about__right-side">
-				<h2 class="section-title section-about__title">Подробнее о нашем проекте</h2>
+				<h2 class="section-title section-about__title"> <span class="text-blue">Подробнее</span> о нашем проекте</h2>
 				<div class="section-about__text-box">
-					<p class="section-about__text">«Название» — это площадка, где вы можете найти специалистов по уходу за лежачими больными напрямую, без посредников.</p>
-					<p class="section-about__text">Наш сервис позволяет быстро найти специалиста по интересующим вас категориям: цена, город и район, опыт работы, оценки других пользователей и не только.</p>
-					<p class="section-about__text">Специалисты, хорошо выполняющие работу получают отзывы и могут постоянно находить работу. Работодатели могут найти хорошего специалиста по отзывам.</p>
+					<p class="section-about__text text">«Название» — это площадка, где вы можете найти специалистов по уходу за лежачими больными напрямую, без посредников.</p>
+					<p class="section-about__text text">Наш сервис позволяет быстро найти специалиста по интересующим вас категориям: цена, город и район, опыт работы, оценки других пользователей и не только.</p>
+					<p class="section-about__text text">Специалисты, хорошо выполняющие работу получают отзывы и могут постоянно находить работу. Работодатели могут найти хорошего специалиста по отзывам.</p>
 				</div>
 				<ul class="section-about__list">
 					<li class="section-about__item">Создавайте резюме</li>
@@ -95,56 +144,62 @@
 			</div>
 		</div>
 	</section>
-	<section class="categories">
+	<section class="services">
 		<div class="container">
-			<h2 class="section-title categories__title"><span class="text-blue">За 1 минуту</span> на нашем сервисе <span class="text-blue">ы можете</span>в найти</h2>
-			<div class="categories__items">
-				<div class="categories__box">
-					<div class="categories__img-box"><img src="" alt="" class="categories__img img-responsive"></div>
-					<p class="categories__name">Профессиональных
+			<h2 class="section-title services__title"><span class="text-blue">За 1 минуту</span> на нашем сервисе <span class="text-blue">вы можете</span> найти</h2>
+			<div class="services__items grid">
+				<div class="services__box">
+					<div class="services__img-box"><img src="img/service1.png" alt="" class="services__img img-responsive"></div>
+					<p class="services__name">Профессиональных
 						сиделок</p>
 				</div>
-				<div class="categories__box">
-					<div class="categories__img-box"><img src="" alt="" class="categories__img img-responsive"></div>
-					<p class="categories__name">Уютный
+				<div class="services__box">
+					<div class="services__img-box"><img src="img/service2.png" alt="" class="services__img img-responsive"></div>
+					<p class="services__name">Уютный
 						пансионат</p>
 				</div>
-				<div class="categories__box">
-					<div class="categories__img-box"><img src="" alt="" class="categories__img img-responsive"></div>
-					<p class="categories__name">Отзывчивых
+				<div class="services__box">
+					<div class="services__img-box"><img src="img/service3.png" alt="" class="services__img img-responsive"></div>
+					<p class="services__name">Отзывчивых
 						волонтёров</p>
 				</div>
-				<div class="categories__box">
-					<div class="categories__img-box"><img src="" alt="" class="categories__img img-responsive"></div>
-					<p class="categories__name">Услуги перевозки лежачих больных</p>
+				<div class="services__box">
+					<div class="services__img-box"><img src="img/service4.png" alt="" class="services__img img-responsive"></div>
+					<p class="services__name">Услуги перевозки лежачих больных</p>
 				</div>
-				<div class="categories__box">
-					<div class="categories__img-box"><img src="" alt="" class="categories__img img-responsive"></div>
-					<p class="categories__name">Ритуальные услуги</p>
+				<div class="services__box">
+					<div class="services__img-box"><img src="img/service5.png" alt="" class="services__img img-responsive"></div>
+					<p class="services__name">Ритуальные услуги</p>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="find">
-		<div class="container">
-			<h2 class="section-titile find__title">Здесь <span class="text-blue">каждый найдёт</span> своё</h2>
-			<div class="find__left-box">
-				<h6 class="find__box-title">Если <span class="text-underline">вы являетесь</span>  специалистом по уходу за больными</h6>
+		<div class="container grid">
+			<h2 class="section-title find__title">Здесь <span class="text-blue">каждый найдёт</span> своё</h2>
+			<div class="find__box find__box--left">
+				<div class="find__box-column-title">
+					<img src="img/icon-man-plus.svg" alt="" class="find__title-img img-responsive">
+					<h6 class="find__box-title">Если <span class="text-underline">вы являетесь</span>  специалистом по уходу за больными</h6>
+				</div>
 				<ul class="find__list">
-					<li class="find__item">Сможете найти работу, не платя коммисию третьим лицам</li>
-					<li class="find__item">Получите удовольствие от поиска и организации работы в удобном личном кабинете</li>
-					<li class="find__item">Ваше резюме ежедневно будет видно десяткам пользователей</li>
-					<li class="find__item">Вы будете получать все 100% заработанных денег, не нужно будет делиться с посредником</li>
+					<li class="find__item text">Сможете найти работу, не платя коммисию третьим лицам</li>
+					<li class="find__item text">Получите удовольствие от поиска и организации работы в удобном личном кабинете</li>
+					<li class="find__item text">Ваше резюме ежедневно будет видно десяткам пользователей</li>
+					<li class="find__item text">Вы будете получать все 100% заработанных денег, не нужно будет делиться с посредником</li>
 				</ul>
 			</div>
-			<div class="find__right-box">
-				<h6 class="find__box-title">Если <span class="text-underline">вы ищите</span> специалиста для своих близких </h6>
+			<div class="find__box find__box--right">
+				<div class="find__box-column-title">
+					<img src="img/icon-man-heart.svg" alt="" class="find__title-img img-responsive">
+					<h6 class="find__box-title">Если <span class="text-underline">вы ищите</span> специалиста для своих близких </h6>
+				</div>
 				<ul class="find__list">
-					<li class="find__item">Легко найдёте подходящую кандидатуру среди сотен специалистов вашего города</li>
-					<li class="find__item">Сможете ознакомиться с отзывами других пользователей, кто уже работал со специалистами</li>
-					<li class="find__item">Свяжитесь со спе циалистом по телефону
+					<li class="find__item text">Легко найдёте подходящую кандидатуру среди сотен специалистов вашего города</li>
+					<li class="find__item text">Сможете ознакомиться с отзывами других пользователей, кто уже работал со специалистами</li>
+					<li class="find__item text">Свяжитесь со спе циалистом по телефону
 						или напишите быстрое сообщение прямо на сайте</li>
-					<li class="find__item">Будете платить специалисту напрямую, исключая наценку/комиссию посредников</li>
+					<li class="find__item text">Будете платить специалисту напрямую, исключая наценку/комиссию посредников</li>
 				</ul>
 			</div>
 		</div>
@@ -155,39 +210,217 @@
 				<span class="text-blue">Отзывы </span>
 				наших пользователей
 			</h2>
-			<div class="reviews__slider">
-				<div class="reviews__slide">
-					<div class="reviews__img-box"><img src="" alt="" class="reviews__img img-responsive"></div>
-					<h6 class="reviews__user-name">Андрей Денисов</h6>
-					<p class="reviews__date">Сегодня в 18:52</p>
-					<p class="reviews__text">«Благодарю! Нашел сиделку на вашем сайте для своей бабушки. В компаниях предлагали 550руб/час и выше. Нашел прекрасного специалиста — Марию
-						за 200руб/час, оченю дружелюбная, сделала даже больше, чем было обговорено»</p>
+			<div class="reviews-slider"> 
+					
+				<div class="reviews-slider__slide">
+					<div class="reviews-slider__user-info grid">
+						<div class="reviews-slider__img-box">
+							<img src="img/user-1.png" alt="" class="reviews-slider__img img-responsive">
+						</div>
+						<div class="reviews-slider__user-text">
+							<h6 class="reviews-slider__user-name">Андрей Денисов</h6>
+							<p class="reviews-slider__date">Сегодня в 18:52</p>
+						</div>
+						<div class="reviews-slider__text-block">  
+							<p class="reviews-slider__text text">«Благодарю! Нашел сиделку на вашем сайте для своей бабушки. В компаниях предлагали 550руб/час и выше. Нашел прекрасного специалиста — Марию
+								за 200руб/час, оченю дружелюбная, сделала даже больше, чем было обговорено»</p>
+						</div>
+					</div> 
 				</div>
-				<div class="reviews__slide">
-					<div class="reviews__img-box"><img src="" alt="" class="reviews__img img-responsive"></div>
-					<h6 class="reviews__user-name">Андрей Денисов</h6>
-					<p class="reviews__date">Сегодня в 18:53</p>
-					<p class="reviews__text">«Благодарю! Нашел сиделку на вашем сайте для своей бабушки. В компаниях предлагали 550руб/час и выше. Нашел прекрасного специалиста — Марию
-						за 200руб/час, оченю дружелюбная, сделала даже больше, чем было обговорено»</p>
+				<div class="reviews-slider__slide">
+					<div class="reviews-slider__user-info grid">
+						<div class="reviews-slider__img-box">
+							<img src="img/user-1.png" alt="" class="reviews-slider__img img-responsive">
+						</div>
+						<div class="reviews-slider__user-text">
+							<h6 class="reviews-slider__user-name">Андрей Денисов</h6>
+							<p class="reviews-slider__date">Сегодня в 18:52</p>
+						</div>
+						<div class="reviews-slider__text-block">  
+							<p class="reviews-slider__text text">«Благодарю! Нашел сиделку на вашем сайте для своей бабушки. В компаниях предлагали 550руб/час и выше. Нашел прекрасного специалиста — Марию
+								за 200руб/час, оченю дружелюбная, сделала даже больше, чем было обговорено»</p>
+						</div>
+					</div> 
 				</div>
-				<div class="reviews__slide">
-					<div class="reviews__img-box"><img src="" alt="" class="reviews__img img-responsive"></div>
-					<h6 class="reviews__user-name">Андрей Денисов</h6>
-					<p class="reviews__date">Сегодня в 18:54</p>
-					<p class="reviews__text">«Благодарю! Нашел сиделку на вашем сайте для своей бабушки. В компаниях предлагали 550руб/час и выше. Нашел прекрасного специалиста — Марию
-						за 200руб/час, оченю дружелюбная, сделала даже больше, чем было обговорено»</p>
+				<div class="reviews-slider__slide">
+					<div class="reviews-slider__user-info grid">
+						<div class="reviews-slider__img-box">
+							<img src="img/user-1.png" alt="" class="reviews-slider__img img-responsive">
+						</div>
+						<div class="reviews-slider__user-text">
+							<h6 class="reviews-slider__user-name">Андрей Денисов</h6>
+							<p class="reviews-slider__date">Сегодня в 18:53</p>
+						</div>
+						<div class="reviews-slider__text-block">  
+							<p class="reviews-slider__text text">«Благодарю! Нашел сиделку на вашем сайте для своей бабушки. В компаниях предлагали 550руб/час и выше. Нашел прекрасного специалиста — Марию
+								за 200руб/час, оченю дружелюбная, сделала даже больше, чем было обговорено»</p>
+						</div>
+					</div> 
 				</div>
-				<div class="reviews__slide">
-					<div class="reviews__img-box"><img src="" alt="" class="reviews__img img-responsive"></div>
-					<h6 class="reviews__user-name">Андрей Денисов</h6>
-					<p class="reviews__date">Сегодня в 18:54</p>
-					<p class="reviews__text">«Благодарю! Нашел сиделку на вашем сайте для своей бабушки. В компаниях предлагали 550руб/час и выше. Нашел прекрасного специалиста — Марию
-						за 200руб/час, оченю дружелюбная, сделала даже больше, чем было обговорено»</p>
+				<div class="reviews-slider__slide">
+					<div class="reviews-slider__user-info grid">
+						<div class="reviews-slider__img-box">
+							<img src="img/user-1.png" alt="" class="reviews-slider__img img-responsive">
+						</div>
+						<div class="reviews-slider__user-text">
+							<h6 class="reviews-slider__user-name">Андрей Денисов</h6>
+							<p class="reviews-slider__date">Сегодня в 18:54</p>
+						</div>
+						<div class="reviews-slider__text-block">  
+							<p class="reviews-slider__text text">«Благодарю! Нашел сиделку на вашем сайте для своей бабушки. В компаниях предлагали 550руб/час и выше. Нашел прекрасного специалиста — Марию
+								за 200руб/час, оченю дружелюбная, сделала даже больше, чем было обговорено»</p>
+						</div>
+					</div> 
 				</div>
+			</div> 
+		</div>
+	</section>
+	<section class="small-banner small-banner--main">
+		<div class="container grid">			
+			<div class="small-banner__img-box">
+				<img src="img/about-project-2.png" alt="" class="small-banner__img img-responsive">
+			</div>
+				<div class="small-banner__right-side">
+					<h1 class="small-banner__title title"> <span class="text-blue">Более 1000 человек</span> уже пользуются нашим сервисом</h1>
+					<div class="small-banner__text-box">
+						<p class="small-banner__text">С помощью сервиса <span class="text-blue">«Название»</span>, вы легко найдёте работу и специалиста по уходу за лежачими больными</p>
+				</div>
+				<a href="" class="small-banner__btn main-btn">Создать резюме</a>
+				<a href="" class="small-banner__btn main-btn">Найти специалиста</a>
 			</div>
 		</div>
 	</section>
-
+	<footer class="footer">  
+		<div class="container grid"> 
+			<a href="" class="arrow-on-top"><img alt="" src="img/arrow-on-top.svg" class="arrow-on-top__img"></a>
+			<div class="footer__box">
+				<div class="footer__logo-box"><img src="img/logo.jpg" alt="" class="footer__logo img-responsive"></div>
+				<p class="footer__desc">Сервис поиска специалистов и работодателей в сфере ухода за лежачими больными</p>
+				<div class="footer__social">
+					<a href="#" class="footer__social-link"> 
+						<svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 46 48" fill="none">
+							<path d="M23 46.2559C35.1503 46.2559 45 36.32 45 24.0635C45 11.807 35.1503 1.87109 23 1.87109C10.8497 1.87109 1 11.807 1 24.0635C1 36.32 10.8497 46.2559 23 46.2559Z" stroke="#161522" stroke-width="2"/>
+							<path d="M23.7 32.0326C23.7 32.0326 24.2 32.0326 24.4 31.73C24.6 31.5282 24.6 31.1247 24.6 31.1247C24.6 31.1247 24.6 29.1072 25.5 28.8046C26.4 28.502 27.6 30.7212 28.8 31.5282C29.7 32.1335 30.5 32.0326 30.5 32.0326H33.8C33.8 32.0326 35.5 31.9317 34.7 30.5195C34.6 30.4186 34.2 29.5107 32.2 27.695C30.1 25.7784 30.4 26.081 32.9 22.7521C34.4 20.7346 35 19.5242 34.9 18.9189C34.7 18.4145 33.6 18.5154 33.6 18.5154H29.8C29.8 18.5154 29.5 18.5154 29.3 18.6163C29.1 18.7172 29 19.0198 29 19.0198C29 19.0198 28.4 20.6338 27.6 21.9451C25.9 24.7696 25.3 24.8705 25 24.7696C24.4 24.3661 24.5 23.1556 24.5 22.2478C24.5 19.5241 24.9 18.4145 23.7 18.1119C23.3 18.011 23 17.9102 21.9 17.9102C20.6 17.9102 19.4 17.9102 18.8 18.2128C18.4 18.4145 18 18.9189 18.2 18.9189C18.4 18.9189 19 19.0198 19.3 19.4233C19.7 19.9276 19.7 21.1381 19.7 21.1381C19.7 21.1381 19.9 24.3661 19.2 24.7696C18.7 25.0723 18 24.467 16.5 21.9451C15.7 20.6338 15.2 19.2215 15.2 19.2215C15.2 19.2215 15.1 18.9189 14.9 18.818C14.7 18.6163 14.3 18.6163 14.3 18.6163H10.7C10.7 18.6163 10.2 18.6163 10 18.818C9.80002 19.0198 10 19.4233 10 19.4233C10 19.4233 12.8 25.8792 16 29.2081C18.9 32.2344 22.2 32.0326 22.2 32.0326H23.7Z" fill="#161522"/>
+							</svg>
+					</a>
+					<a href="#" class="footer__social-link"> 
+						<svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 46 48" fill="none">
+							<path d="M23 46.2657C35.1503 46.2657 45 36.3298 45 24.0733C45 11.8167 35.1503 1.88086 23 1.88086C10.8497 1.88086 1 11.8167 1 24.0733C1 36.3298 10.8497 46.2657 23 46.2657Z" stroke="#161522" stroke-width="2"/>
+							<path d="M23.0001 15.6002C24.4001 15.6002 25.6001 16.7099 25.6001 18.223C25.6001 19.6352 24.4001 20.8457 23.0001 20.8457C21.6001 20.8457 20.4001 19.6352 20.4001 18.223C20.4001 16.8107 21.6001 15.6002 23.0001 15.6002ZM23.0001 24.4772C26.4001 24.4772 29.2001 21.6527 29.2001 18.223C29.2001 14.7932 26.4001 11.9688 23.0001 11.9688C19.6001 11.9688 16.8001 14.7932 16.8001 18.223C16.7001 21.6527 19.5001 24.4772 23.0001 24.4772ZM25.5001 29.5209C26.8001 29.2183 28.0001 28.7139 29.1001 28.0078C30.0001 27.5034 30.2001 26.2929 29.7001 25.4859C29.2001 24.679 28.0001 24.3763 27.2001 24.8807C24.6001 26.4947 21.4001 26.4947 18.8001 24.8807C17.9001 24.3763 16.8001 24.5781 16.3001 25.4859C15.8001 26.2929 16.0001 27.5034 16.9001 28.0078C18.0001 28.7139 19.3001 29.2183 20.5001 29.5209L17.0001 33.0515C16.3001 33.7577 16.3001 34.9682 17.0001 35.6743C17.4001 36.0778 17.8001 36.1787 18.3001 36.1787C18.8001 36.1787 19.2001 35.9769 19.6001 35.6743L23.0001 32.2445L26.4001 35.6743C27.1001 36.3804 28.3001 36.3804 29.0001 35.6743C29.7001 34.9682 29.7001 33.7577 29.0001 33.0515L25.5001 29.5209Z" fill="#161522"/>
+							</svg>
+					</a>
+				</div>
+			
+			</div>
+			<div class="footer__box">
+				<p class="footer__title">Контакты для связи:</p> 
+				<div class="footer__contacts">
+					<a href="tel:+78124544585" class="footer__link footer__link--phone text"> <i class="icon-phone"></i> 8 (812) 457-75-85</a>
+					<a href="mailto:your.house@mail.ru" class="footer__link footer__link--mail text"><i class="icon-mail"></i> your.house@mail.ru</a>
+					<p class="footer__link footer__link--geo text"><i class="icon-geo"></i> г. Екатеринбург, ул Малышева 76 </p>
+				</div>
+			</div>
+			<div class="footer__box">
+				<p class="footer__title">Дополнительно:</p>
+				<div class="footer__more">
+					<a href="" class="footer__link text">О проете</a>
+					<a href="" class="footer__link text">Сотрудничество</a>
+					<a href="" class="footer__link text">Реклама</a>
+				</div>
+			</div>
+			<div class="footer__box">
+				<p class="footer__title">Заголовок:</p>
+				<div class="footer__seo">
+					<a href="" class="footer__link text">SEO-раздел</a>
+					<a href="" class="footer__link text">SEO-раздел</a>
+					<a href="" class="footer__link text">SEO-раздел</a>
+				</div>
+			</div>
+			<div class="footer__bot grid">
+				<p class="footer__text text">© ООО «Название компании»</p> 
+				<div class="footer__text-box">
+					<a href="#" class="footer__link text">Политика конфиденциальности</a>
+					<p class="footer__text text">Разработка сайта: invite</p> 
+				</div>
+			</div>
+		</div>
+			<div class="footer__line"></div> 
+			
+			<!-- <div class="footer__top ">
+				<div class="container grid">
+					<div class="footer__logo-box"><img src="img/logo.jpg" alt="" class="footer__logo img-responsive"></div>
+					<p class="footer__title">Контакты для связи:</p>
+					<p class="footer__title">Дополнительно:</p>
+					<p class="footer__title">Заголовок:</p>
+				</div>
+			</div>
+			<div class="container"> 
+				<div class="footer__mid grid">
+					<p class="footer__desc">Сервис поиска специалистов и работодателей в сфере ухода за лежачими больными</p>
+					<div class="footer__contacts">
+						<a href="tel:+78124544585" class="footer__link footer__link--phone text"> <i class="icon-phone"></i> 8 (812) 457-75-85</a>
+						<a href="mailto:your.house@mail.ru" class="footer__link footer__link--mail text"><i class="icon-mail"></i> your.house@mail.ru</a>
+						<p class="footer__link footer__link--geo text"><i class="icon-geo"></i> г. Екатеринбург, ул Малышева 76 </p>
+					</div>
+					<div class="footer__more">
+						<a href="" class="footer__link text">О проете</a>
+						<a href="" class="footer__link text">Сотрудничество</a>
+						<a href="" class="footer__link text">Реклама</a>
+					</div>
+					<div class="footer__seo">
+						<a href="" class="footer__link text">SEO-раздел</a>
+						<a href="" class="footer__link text">SEO-раздел</a>
+						<a href="" class="footer__link text">SEO-раздел</a>
+					</div>
+					<div class="footer__social">
+						<a href="#" class="footer__social-link"><img src="img/icon-vk.svg" alt="" class="footer__social-img img-responsive"></a>
+						<a href="#" class="footer__social-link"><img src="img/icon-ok.svg" alt="" class="footer__social-img img-responsive"></a>
+					</div>
+				</div>
+				<div class="footer__bot grid">
+					<p class="footer__text text">© ООО «Название компании»</p>
+					<div class="footer__text-box">
+						<a href="#" class="footer__link text">Политика конфиденциальности</a>
+						<p class="footer__text text">Разработка сайта: invite</p> 
+					</div>
+				</div>
+			</div>  -->
+	</footer>
+	<!-- <footer class="footer--mobile">
+		<div class="container"> 
+			<a href="" class="arrow-on-top"><img alt="" src="img/arrow-on-top.svg" class="arrow-on-top"></a>
+			<div class="footer__logo-box">
+				<img src="img/logo.jpg" alt="" class="footer__logo img-responsive">
+			</div>
+			<p class="footer__desc">Сервис поиска специалистов и работодателей в сфере ухода за лежачими больными</p>
+			<div class="footer__social">
+				<a href="#" class="footer__social-link"><img src="img/icon-vk.svg" alt="" class="footer__social-img img-responsive"></a>
+				<a href="#" class="footer__social-link"><img src="img/icon-ok.svg" alt="" class="footer__social-img img-responsive"></a>
+			</div>
+			<div class="footer__contacts">
+				<a href="tel:+78124544585" class="footer__link footer__link--phone text"> <i class="icon-phone"></i> 8 (812) 457-75-85</a>
+				<a href="mailto:your.house@mail.ru" class="footer__link footer__link--mail text"><i class="icon-mail"></i> your.house@mail.ru</a>
+				<p class="footer__link footer__link--geo text"><i class="icon-geo"></i> г. Екатеринбург, ул Малышева 76 </p>
+			</div>
+			<div class="footer__more">
+				<a href="" class="footer__link text">О проете</a>
+				<a href="" class="footer__link text">Сотрудничество</a>
+				<a href="" class="footer__link text">Реклама</a>
+			</div>
+			<div class="footer__seo">
+				<a href="" class="footer__link text">SEO-раздел</a>
+				<a href="" class="footer__link text">SEO-раздел</a>
+				<a href="" class="footer__link text">SEO-раздел</a>
+			</div>
+			<div class="footer__bot grid">
+				<p class="footer__text text">© ООО «Название компании»</p>
+				<div class="footer__text-box">
+					<a href="#" class="footer__link text">Политика конфиденциальности</a>
+					<p class="footer__text text">Разработка сайта: invite</p> 
+				</div>
+			</div>
+		</div>
+	</footer> -->
 	<script src="js/scripts.min.js"></script>
 
 </body>

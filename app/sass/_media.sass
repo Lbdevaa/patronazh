@@ -1,55 +1,248 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
 
-
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
 
-
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	.burger-menu
+		display: inline-block
+	.title
+		font-size: em(36px)
+		line-height: 1.2
+		text-align: center
 
+	.main-btn
+		padding: em(8px) em(21px)
+		text-align: center
+		display: block
+
+	.section-title
+		text-align: center
+		font-size: em(42px)
+		margin-bottom: em(12px)
+
+	.text
+		margin-bottom: em(15px)
+
+	.header
+		display: none
+		&--mobile
+			display: block
+			padding: 20px 0
+			background-color: $lblue
+			>div
+				grid-template-columns: max-content 1fr max-content
+				align-items: center
+		&__logo-box
+			margin-right: 20px
+			display: inline-block
+	.mobile-menu__text
+		margin: 0 0 em(4px)
+	.autorize
+		&__url
+			font-size: em(20px)
+			margin: 0	em(10px) 0 0
+
+	.main-banner
+		background: url(../img/banner-bg-mobile.png) no-repeat
+		background-size: contain
+		>div
+			padding: 320px 10px 50px
+		&__title
+			margin: 0 0 em(5px)
+		&__text
+			text-align: center
+			font-size: em(24px)
+			margin: 0 0 em(23px)
+		&__btn,
+			margin: 0 auto 10px
+			display: block
+			width: 250px
+			&:last-of-type
+				margin: auto
+
+	.short-banner
+		>div
+			padding: 0 20px 50px
+		&__title
+			font-size: em(42px)
+			margin: 0 0 em(13px)
+		&__cards
+			grid-template-columns: 1fr
+			grid-gap: 30px
+			justify-items: center
+
+	.section-about
+		padding: 40px 0 50px
+		>div
+			grid-template-columns: 1fr
+			grid-gap: 30px
+		&__title
+		&__right-side
+			grid-row: 1
+		&__img-box
+			width: 100%
+			height: 355px
+
+	.services
+		padding: 50px 0
+		&__items
+			display: block
+			margin: 0 -15px
+		&__img-box, &__img
+			width: 100%
+
+		&__box
+			margin: 0 20px
+			&:first-of-type
+				// margin: 0 0 0 10px
+	.find
+		padding: 40px 0 50px
+		>div
+			padding: 0 20px
+			grid-template-columns: 1fr
+			grid-gap: 30px
+		&__title
+			grid-column: 1/2
+			margin: 0
+		&__box-column-title
+			display: inline-block
+		&__box-title
+			text-align: center
+			font-size: em(20px)
+			line-height: 1.4
+		&__title-img
+			margin: 0 auto 7px
+		&__item
+			&:last-child
+				margin: 0
+
+	.reviews
+		padding: 50px 0 0
+
+	.reviews-slider
+		&__slide
+			margin: 0 20px
+			padding: 30px
+		&__text-block
+			grid-column: 1/3
+		&__img-box
+			margin: 0
+		&__user-info
+			grid-gap: 15px
+		&__user-name
+			font-size: em(20px)
+			line-height: 1.4
+			font-weight: 600
+		&__date
+			line-height: 1.6
+		&__text
+			margin: 0
+		&__arrow
+			width: 26px
+			height: 26px
+			&--prev
+				left: -10px
+			&--next
+				right: -10px
+
+	.slick-dots
+		bottom: -35px
+
+	.small-banner
+		padding: 50px 0
+		margin-bottom: 30px
+		>div
+			grid-template-columns: 1fr
+		&__img-box
+			width: 100%
+			height: 343px
+		&__text
+			font-size: em(24px)
+			line-height: 1.2
+			margin: 0 0 em(22px)
+			text-align: center
+		&__btn, &__btn:last-child
+			margin: 0 auto 10px
+			width: 250px
+
+	.footer
+		padding: 0 0 30px
+		>div.container
+			grid-template-columns: 1fr
+			text-align: center
+			grid-gap: 0
+		&__box
+			border-bottom: 2px solid $gray
+			padding: 15px 0 20px
+		&__title
+			margin: 0 0 em(8px)
+		&__logo-box
+			margin: 0 auto 10px
+			width: 80px
+		&__desc
+			max-width: 100%
+			margin: 0 0 em(11px)
+		&__social-link
+			width: 30px
+		&__link
+			margin-bottom: em(6px)
+		&__line
+			display: none
+		&__bot
+			grid-column: 1/2
+			grid-template-columns: 1fr
+			padding: 15px 0 0
+		&__text-box
+			text-align: center
+			justify-self: center
+			grid-row: 1
+		&__social-img > path
+			stroke: $blue
+			&:last-child
+				fill: $blue
+		.footer__contacts, .footer__desc, .footer__more, .footer__seo
+			padding: 0
+	.arrow-on-top
+		display: block
+		&__img
+			max-width: max-content
+	/**/
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
 
-
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
 
-
-/*==========  Mobile First  ==========*/
+/*==========	Mobile First	==========*/
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px)
 	/**/
 
-
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px)
 	/**/
-
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
 	/**/
 
-
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
 	/**/
 
-
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/
-

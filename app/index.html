@@ -22,7 +22,7 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__top-line grid">
-				<a href="" class="header__logo-box"><img src="img/logo.jpg" alt="" class="header__logo img-responsive"></a>
+				<a href="" class="header__logo-box"><img src="img/logo.png" alt="" class="header__logo img-responsive"></a>
 				<p class="header__info">Сервис поиска специалистов и работодателей в сфере по уходу за лежачими больными</p>
 				<div class="phone-box">
 					<a href="tel:+7 (800) 233-33-33" class="phone-box__call"> <i class="icon-phone-big phone-box__icon-phone-big"></i> +7 (800) 233-33-33</a>
@@ -48,16 +48,16 @@
 				</ul>
 				<div class="autorize">
 					<a href="#" class="autorize__url">Регистрация</a>
-					<a href="#" class="autorize__url">Вход</a>
+					<a href="#login" class="autorize__url open-popup">Вход</a>
 				</div>
 			</div>
 		</div> 
 	</header>
 	<header class="header--mobile">
 		<div class="container grid">
-			<a href="" class="header__logo-box"><img src="img/logo.jpg" alt="" class="header__logo img-responsive"></a>
+			<a href="" class="header__logo-box"><img src="img/logo.png" alt="" class="header__logo img-responsive"></a>
 			<div class="autorize">
-				<a href="#" class="autorize__url">Вход</a>
+				<a href="#login" class="autorize__url open-popup">Вход</a>
 				<a href="#" class="autorize__url">Регистрация</a>
 			</div>
 			<button class="burger-menu">
@@ -294,7 +294,7 @@
 		<div class="container grid"> 
 			<a href="" class="arrow-on-top"><img alt="" src="img/arrow-on-top.svg" class="arrow-on-top__img"></a>
 			<div class="footer__box">
-				<div class="footer__logo-box"><img src="img/logo.jpg" alt="" class="footer__logo img-responsive"></div>
+				<div class="footer__logo-box"><img src="img/logo.png" alt="" class="footer__logo img-responsive"></div>
 				<p class="footer__desc">Сервис поиска специалистов и работодателей в сфере ухода за лежачими больными</p>
 				<div class="footer__social">
 					<a href="#" class="footer__social-link"> 
@@ -344,83 +344,31 @@
 				</div>
 			</div>
 		</div>
-			<div class="footer__line"></div> 
-			
-			<!-- <div class="footer__top ">
-				<div class="container grid">
-					<div class="footer__logo-box"><img src="img/logo.jpg" alt="" class="footer__logo img-responsive"></div>
-					<p class="footer__title">Контакты для связи:</p>
-					<p class="footer__title">Дополнительно:</p>
-					<p class="footer__title">Заголовок:</p>
-				</div>
-			</div>
-			<div class="container"> 
-				<div class="footer__mid grid">
-					<p class="footer__desc">Сервис поиска специалистов и работодателей в сфере ухода за лежачими больными</p>
-					<div class="footer__contacts">
-						<a href="tel:+78124544585" class="footer__link footer__link--phone text"> <i class="icon-phone"></i> 8 (812) 457-75-85</a>
-						<a href="mailto:your.house@mail.ru" class="footer__link footer__link--mail text"><i class="icon-mail"></i> your.house@mail.ru</a>
-						<p class="footer__link footer__link--geo text"><i class="icon-geo"></i> г. Екатеринбург, ул Малышева 76 </p>
-					</div>
-					<div class="footer__more">
-						<a href="" class="footer__link text">О проете</a>
-						<a href="" class="footer__link text">Сотрудничество</a>
-						<a href="" class="footer__link text">Реклама</a>
-					</div>
-					<div class="footer__seo">
-						<a href="" class="footer__link text">SEO-раздел</a>
-						<a href="" class="footer__link text">SEO-раздел</a>
-						<a href="" class="footer__link text">SEO-раздел</a>
-					</div>
-					<div class="footer__social">
-						<a href="#" class="footer__social-link"><img src="img/icon-vk.svg" alt="" class="footer__social-img img-responsive"></a>
-						<a href="#" class="footer__social-link"><img src="img/icon-ok.svg" alt="" class="footer__social-img img-responsive"></a>
-					</div>
-				</div>
-				<div class="footer__bot grid">
-					<p class="footer__text text">© ООО «Название компании»</p>
-					<div class="footer__text-box">
-						<a href="#" class="footer__link text">Политика конфиденциальности</a>
-						<p class="footer__text text">Разработка сайта: invite</p> 
-					</div>
-				</div>
-			</div>  -->
+			<div class="footer__line"></div>  
 	</footer>
-	<!-- <footer class="footer--mobile">
-		<div class="container"> 
-			<a href="" class="arrow-on-top"><img alt="" src="img/arrow-on-top.svg" class="arrow-on-top"></a>
-			<div class="footer__logo-box">
-				<img src="img/logo.jpg" alt="" class="footer__logo img-responsive">
+	 <div id="login" class="mfp-hide white-popup">
+		 <div class="container grid">
+			<div class="white-popup__box">
+				<p class="white-popup__title">Войдите в личный кабинет и пользуйтесь функционалом сервиса бесплатно</p>
+				<form id="order-phone" class="white-popup__form">
+					<input type="text" name="login" class="white-popup__input popup-text" placeholder="Ваш телефон или e-mail">
+					<input type="text" name="password" class="white-popup__input popup-text" placeholder="Пароль" required="">
+					<button type="submit" class="white-popup__btn main-btn">Войти</button>
+					<a href="#" class="white-popup__url popup-text">Забыли пароль?</a>
+					<p class="white-popup__description">При входе, вы принимаете условия Пользовательского соглашения и Политики конфиденциальности своих персональных данных.</p>
+					<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+				</form> 
 			</div>
-			<p class="footer__desc">Сервис поиска специалистов и работодателей в сфере ухода за лежачими больными</p>
-			<div class="footer__social">
-				<a href="#" class="footer__social-link"><img src="img/icon-vk.svg" alt="" class="footer__social-img img-responsive"></a>
-				<a href="#" class="footer__social-link"><img src="img/icon-ok.svg" alt="" class="footer__social-img img-responsive"></a>
-			</div>
-			<div class="footer__contacts">
-				<a href="tel:+78124544585" class="footer__link footer__link--phone text"> <i class="icon-phone"></i> 8 (812) 457-75-85</a>
-				<a href="mailto:your.house@mail.ru" class="footer__link footer__link--mail text"><i class="icon-mail"></i> your.house@mail.ru</a>
-				<p class="footer__link footer__link--geo text"><i class="icon-geo"></i> г. Екатеринбург, ул Малышева 76 </p>
-			</div>
-			<div class="footer__more">
-				<a href="" class="footer__link text">О проете</a>
-				<a href="" class="footer__link text">Сотрудничество</a>
-				<a href="" class="footer__link text">Реклама</a>
-			</div>
-			<div class="footer__seo">
-				<a href="" class="footer__link text">SEO-раздел</a>
-				<a href="" class="footer__link text">SEO-раздел</a>
-				<a href="" class="footer__link text">SEO-раздел</a>
-			</div>
-			<div class="footer__bot grid">
-				<p class="footer__text text">© ООО «Название компании»</p>
-				<div class="footer__text-box">
-					<a href="#" class="footer__link text">Политика конфиденциальности</a>
-					<p class="footer__text text">Разработка сайта: invite</p> 
+			<div class="white-popup__box white-popup__box--reg"> 
+				<div class="white-popup__title-box">
+					<p class="white-popup__title white-popup__title--right text-blue">У вас ещё нет аккаунта?</p> 
+					<p class="white-popup__title white-popup__title--right">Пройдите регистрацию за 1 минуту</p>  
 				</div>
+				<a href="" class="white-popup__btn white-popup__btn--reg main-btn">Зарегестрироваться</a>
+				<p class="white-popup__text">После регистрации вы сможете находить работу или специалистов быстро и бесплатно</p>
 			</div>
 		</div>
-	</footer> -->
+	 </div>
 	<script src="js/scripts.min.js"></script>
 
 </body>

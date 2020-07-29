@@ -538,6 +538,82 @@
   display: none
   max-width: max-content
   justify-self: end
-.slick-slide
-  // padding: 0 15px
+
+.white-popup
+  background-color: #fff
+  max-width: 1210px
+  margin: auto
+  position: relative
+  .mfp-close
+    font-size: em(76px)
+    color: $dark
+
+.white-popup
+  >div
+    grid-template-columns: 1fr 1fr
+  &__box
+    padding: 50px 60px
+    align-self: center
+    &:first-child
+      border-right: 2px solid $gray
+    &--reg
+      padding: 50px 100px
+  &__title-box
+    margin-bottom: 20px
+  &__title
+    font-weight: 600
+    font-size: em(24px)
+    line-height: 1.2
+    text-align: center
+    margin: 0 0 em(23px)
+    &--right
+      margin: 0 0 em(8px)
+      // &:last-of-type
+      //   margin: 0 0 em(18px)
+  &__form
+    width: 350px
+    margin: auto
+  &__input
+    padding: 14px 20px
+    width: 100%
+    margin: auto
+    display: block
+    margin-bottom: 10px
+    border: 1px solid $gray
+    border-radius: 5px
+    &:last-of-type
+      margin-bottom: 20px
+  &__btn
+    width: 100%
+    border: none
+    margin-bottom: 10px
+    text-align: center
+    &--reg
+      max-width: 350px
+      margin: 0 auto 50px
+      display: block
+  &__url
+    text-decoration: none
+    color: $dark
+    margin-bottom: 30px
+    display: block
+    max-width: max-content
+  &__description
+    color: $blue
+    margin: 0
+    font-family: $FPTBOOK
+    font-size: em(14px)
+    line-height: 1.2
+    text-align: center
+  &__text
+    margin: 0
+    font-family: $FPTBOOK
+    font-size: em(20px)
+    line-height: 1.4
+    text-align: center
+
+.popup-text
+  font-family: $FPTBOOK
+  font-size: em(18px)
+  line-height: 1.2
 @import "media" // Всегда в конце

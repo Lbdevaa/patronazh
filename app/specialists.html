@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="apple-touch-icon" sizes="192x192" href="img/favicon.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="img/favicon.png">
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__top-line grid">
+				<a href="" class="header__logo-box"><img src="img/logo.png" alt="" class="header__logo img-responsive"></a>
+				<p class="header__info">Сервис поиска специалистов и работодателей в сфере по уходу за лежачими больными</p>
+				<div class="phone-box">
+					<a href="tel:+7 (800) 233-33-33" class="phone-box__call"> <i class="icon-phone-big phone-box__icon-phone-big"></i> +7 (800) 233-33-33</a>
+				</div>
+				<a href="#" class="header__btn main-btn">Подать объявление</a>
+			</div> 
+		</div>
+		<div class="header__bot-line">
+			<div class="container">
+				<ul class="nav">
+					<li class="nav__item"><a href="/" class="nav__url ">Главная</a></li>
+					<li class="nav__item"><a href="specialists.html " class="nav__url active">Специалисты</a></li>
+					<li class="nav__item"><a href="give.html" class="nav__url">Отдам даром</a></li>
+					<li class="nav__item"><a href="use.html" class="nav__url">Как пользоваться</a></li>  
+					<li class="nav__item arrow-more"><a href="#" class="nav__url">Ещё</a>
+						<ul class="second-nav">
+							<li class="second-nav__item"><a href="about.html" class="second-nav__url">О сервисе</a></li>
+							<li class="second-nav__item"><a href="reviews.html" class="second-nav__url">Отзывы</a></li>
+							<li class="second-nav__item"><a href="contacts.html" class="second-nav__url">Контакты</a></li>
+							<li class="second-nav__item"><a href="help.html" class="second-nav__url">Помощь</a></li> 
+						</ul>
+					</li>
+				</ul>
+				<div class="autorize">
+					<a href="#" class="autorize__url">Регистрация</a>
+					<a href="#login" class="autorize__url open-popup">Вход</a>
+				</div>
+				<div class="autorized flex">
+					<a href="" class="autorized__url">
+						<!-- <i class="icon-heart"></i> -->
+						<img src="icons/heart.svg" alt="" class="autorized__img img-responsive">
+					</a>
+					<a href="" class="autorized__url autorized__url--mail">
+						<img src="icons/mail-2.svg" alt="" class="autorized__img img-responsive">
+						<div class="autorized__mails-box">
+							<span class="autorized__mails">99</span>
+						</div>
+						<!-- <i class="icon-mail-2"></i> -->
+					</a>
+					<a href="#" class="autorized__url-user"> 
+						<img src="img/user-1.png" alt="" class="autorized__img-user img-responsive">
+					</a> 
+				</div>
+			</div>
+		</div> 
+	</header>
+	<header class="header--mobile">
+		<div class="container grid">
+			<a href="" class="header__logo-box"><img src="img/logo.png" alt="" class="header__logo img-responsive"></a>
+			<div class="autorize">
+				<a href="#login" class="autorize__url open-popup">Вход</a>
+				<a href="#" class="autorize__url">Регистрация</a>
+			</div>
+			<div class="autorized flex">
+				<a href="" class="autorized__url">
+					<!-- <i class="icon-heart"></i> -->
+					<img src="icons/heart.svg" alt="" class="autorized__img img-responsive">
+				</a>
+				<a href="" class="autorized__url autorized__url--mail">
+					<img src="icons/mail-2.svg" alt="" class="autorized__img img-responsive">
+					<div class="autorized__mails-box">
+						<span class="autorized__mails">99</span>
+					</div>
+					<!-- <i class="icon-mail-2"></i> -->
+				</a>
+				<a href="#" class="autorized__url-user"> 
+					<img src="img/user-1.png" alt="" class="autorized__img-user img-responsive">
+				</a> 
+			</div>
+			<button class="burger-menu">
+				<span class="burger-menu__line"></span>
+			</button>
+			<div class="mobile-menu"> 
+				<div class="mobile-menu__box grid"> 	
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__item"><a href="/" class="mobile-menu__url ">Главная</a></li>
+						<li class="mobile-menu__item"><a href="specialists.html" class="mobile-menu__url active">Специалисты</a></li>
+						<li class="mobile-menu__item"><a href="give.html" class="mobile-menu__url">Отдам даром</a> </li>
+						<li class="mobile-menu__item"><a href="use.html" class="mobile-menu__url">Как пользоваться</a> </li>
+						<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__url">О сервисе</a> </li>
+						<li class="mobile-menu__item"><a href="reviews.html" class="mobile-menu__url">Отзывы</a> </li>
+						<li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__url">Контакты</a> </li>
+						<li class="mobile-menu__item"><a href="help.html" class="mobile-menu__url">Помощь</a> </li>
+					</ul>
+					<div class="mobile-menu__phone-box">
+						<a href="tel:+7 (800) 233-33-33" class="mobile-menu__phone"> <i class="icon-phone-big mobile-menu__icon-phone-big"></i> +7 (800) 233-33-33</a>
+						<a href="#" class="mobile-menu__btn main-btn">Подать объявление</a>
+					</div>
+					<div class="mobile-menu__more">
+						<a href="#" class="mobile-menu__text text">Политика конфиденциальности</a>
+						<p class="mobile-menu__text text">© ООО «Название компании»</p>
+						<p class="mobile-menu__text text">Разработка сайта: invite</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="breadcrumbs">
+		<div class="container">
+			<a class="breadcrumbs__url" href="http://geo.remote24.ru/">Главная</a>
+			<p class="breadcrumbs__separator">•</p>
+			<p class="breadcrumbs__text">О компании</p>
+		</div>
+	</section>
+	<section class="notice notice--specialists">
+		<div class="container">
+			<p class="notice__text text--h6">Чтобы разместить резюме или написать кандидату — войдите в личный кабинет</p>
+			<a href="#login" class="main-btn main-btn--white notice__btn">Личный кабинет</a>
+		</div>
+	</section>
+	<div class="specialists-inner">
+		<div class="container grid">
+			<aside class="aside">
+				<div class="aside__filter"> 
+					<div class="aside__block">
+						<p class="aside__block-title text--h6">Я хочу найти:</p>
+						<label for="" class="aside__label text--menu grid">
+							<input type="checkbox" class="aside__input-check"> 
+							<span>Сиделку</span>
+						</label>
+						<label for="" class="aside__label text--menu grid">
+							<input type="checkbox" class="aside__input-check"> 
+							<span>Волонтёра</span>
+						</label>
+						<label for="" class="aside__label text--menu grid">
+							<input type="checkbox" class="aside__input-check"> 
+							<span>Пансионат</span>
+						</label>
+						<label for="" class="aside__label text--menu grid">
+							<input type="checkbox" class="aside__input-check"> 
+							<span>Специалиста
+								по перевозке</span>
+						</label>
+						<label for="" class="aside__label text--menu grid">
+							<input type="checkbox" class="aside__input-check"> 
+							<span>Ритуальные
+								услуги</span>
+						</label>
+					</div>
+					<div class="aside__block">
+						<p class="aside__block-title text--h6">Наличие фото:</p>
+						<label for="" class="aside__label text--menu grid">
+							<input type="checkbox" class="aside__input-check"> 
+							<span>С фото</span>
+						</label>
+						<label for="" class="aside__label text--menu grid">
+							<input type="checkbox" class="aside__input-check"> 
+							<span>Можно без фото</span>
+						</label> 
+						</label>
+					</div>
+					<div class="aside__block">
+						<p class="aside__block-title text--h6">Опыт работы:</p>
+						<label for="" class="aside__label text--menu grid">
+							<input type="checkbox" class="aside__input-check"> 
+							<span>С опытом</span>
+						</label>
+						<label for="" class="aside__label text--menu grid">
+							<input type="checkbox" class="aside__input-check"> 
+							<span>Можно без опыта</span>
+						</label> 
+					</div>
+					<div class="aside__block">
+						<p class="aside__block-title text--h6">Стоимость:</p>
+						<label for="" class="aside__label aside__label--price text--menu">
+							<span>от</span>
+							<input type="text" class="aside__input-price"> 
+						</label>
+						<label for="" class="aside__label aside__label--price text--menu">
+							<span>до</span>
+							<input type="text" class="aside__input-price"> 
+						</label> 
+					</div>
+				</div>
+			</aside>
+			<section class="specialists-ads">
+				<div class="sort specialists-ads__sort grid">
+					<a href="#" class="sort__btn main-btn active">По возвраст. цены</a>
+					<a href="#" class="sort__btn main-btn">По кол-ву отзывов</a>
+					<a href="#" class="sort__btn main-btn">По опыту работы</a>
+					<a href="#" class="sort__btn main-btn">По возврасту спец.</a> 
+					<a href="#" class="sort__btn main-btn active">Сначала новые</a>
+				</div> 
+					<div class="ads grid">
+						<div class="advert grid">
+							<div class="advert__user-photo"> 
+								<div class="advert__img-box">
+									<img src="img/user-1.png" alt="" class="advert__img">
+								</div>
+								<div class="advert__rating flex">
+										<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+											<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+										<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+										<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+										<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+									</svg> 
+									<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star" viewBox="0 0 28 27" fill="none">
+										<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</div> 
+							<div class="advert__info">
+								<p class="advert__name text--h6">Мария Иванова, 32 года</p>
+								<i class="icon-heart"></i>
+								<div class="advert__desc-box">
+									<p class="advert__desc-title text--button">Описание специалиста:</p>
+									<p class="advert__desc text">Рыба текст. Специалисты, хорошо выполняющие работу получают отзывы и могут постоянно находить работу. Работодатели могут найти хорошего специалиста по отзывам. Работодатели могут найти хорошего специалиста по отзывам.</p>
+								</div>
+								<a href="#" class="advert__more-url text  ">Посмотреть больше данных  </a>
+							</div>
+							<div class="advert__short">
+								<div class="advert__short-spec-box">
+									<p class="advert__short-spec text">Город: <span class="text--button">Екатеринбург</span></p>
+									<p class="advert__short-spec text">Опыт работы: <span class="text--button">3 года</span></p>
+									<p class="advert__short-spec text">Цена работы: <span class="text--button">200 руб/час</span></p>
+									<p class="advert__short-spec text">Отзывы: <span> <span class="text--button text--blue">+ 11</span><span class="text--button">- 0</span></p></span>
+								</div>
+									<a href="#" class="advert__btn main-btn">Получить контакты</a>
+									<a href="" class="advert__btn main-btn">Написать сообщение</a>
+							</div>
+							<div class="advert__more-info  "> 
+								<div class="advert__more-box">
+									<p class="advert__more-title text--button">Дополнительная информация:</p>
+									<p class="advert__short-spec text">Удобный район работы: <span class="text--button">Любой</span></p>
+									<p class="advert__short-spec text">Проживание: <span class="text--button">С проживанием</span></p>
+									<p class="advert__short-spec text">Есть ли основная работа: <span class="text--button">Нет</span></p>
+									<p class="advert__short-spec text">Вредные привычки: <span class="text--button">Курение</span></p>
+								</div>
+								<div class="advert__more-box">
+									<p class="advert__more-title text--button">Дополнительные навыки:</p>
+									<div class="advert__more-spec-box grid">
+										<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+										<p class="advert__more-spec text--menu">  Приготовление еды</p>
+									</div>
+									<div class="advert__more-spec-box grid">
+										<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+										<p class="advert__more-spec text--menu"> Стирка вещей</p>
+									</div>
+									<div class="advert__more-spec-box grid">
+										<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+										<p class="advert__more-spec text--menu"> Выгул животных</p>
+									</div>
+									<div class="advert__more-spec-box grid">
+										<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+										<p class="advert__more-spec text--menu"> Уборка по дому</p> 
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="advert grid">
+							<div class="advert__user-photo"> 
+								<div class="advert__img-box">
+									<img src="img/user-1.png" alt="" class="advert__img">
+								</div>
+								<div class="advert__rating flex">
+										<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+											<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+										<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+										<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+										<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+									</svg> 
+									<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star" viewBox="0 0 28 27" fill="none">
+										<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</div> 
+							<div class="advert__info">
+								<p class="advert__name text--h6">Мария Иванова, 32 года</p>
+								<i class="icon-heart"></i>
+								<div class="advert__desc-box">
+									<p class="advert__desc-title text--button">Описание специалиста:</p>
+									<p class="advert__desc text">Рыба текст. Специалисты, хорошо выполняющие работу получают отзывы и могут постоянно находить работу. Работодатели могут найти хорошего специалиста по отзывам. Работодатели могут найти хорошего специалиста по отзывам.</p>
+								</div>
+								<a href="#" class="advert__more-url text active">Посмотреть больше данных  </a>
+							</div>
+							<div class="advert__short">
+								<div class="advert__short-spec-box">
+									<p class="advert__short-spec text">Город: <span class="text--button">Екатеринбург</span></p>
+									<p class="advert__short-spec text">Опыт работы: <span class="text--button">3 года</span></p>
+									<p class="advert__short-spec text">Цена работы: <span class="text--button">200 руб/час</span></p>
+									<p class="advert__short-spec text">Отзывы: <span> <span class="text--button text--blue">+ 11</span><span class="text--button">- 0</span></p></span>
+								</div>
+									<a href="#" class="advert__btn main-btn">Получить контакты</a>
+									<a href="" class="advert__btn main-btn">Написать сообщение</a>
+							</div>
+							<div class="advert__more-info active"> 
+								<div class="advert__more-box">
+									<p class="advert__more-title text--button">Дополнительная информация:</p>
+									<p class="advert__short-spec text">Удобный район работы: <span class="text--button">Любой</span></p>
+									<p class="advert__short-spec text">Проживание: <span class="text--button">С проживанием</span></p>
+									<p class="advert__short-spec text">Есть ли основная работа: <span class="text--button">Нет</span></p>
+									<p class="advert__short-spec text">Вредные привычки: <span class="text--button">Курение</span></p>
+								</div>
+								<div class="advert__more-box">
+									<p class="advert__more-title text--button">Дополнительные навыки:</p>
+									<div class="advert__more-spec-box grid">
+										<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+										<p class="advert__more-spec text--menu">  Приготовление еды</p>
+									</div>
+									<div class="advert__more-spec-box grid">
+										<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+										<p class="advert__more-spec text--menu"> Стирка вещей</p>
+									</div>
+									<div class="advert__more-spec-box grid">
+										<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+										<p class="advert__more-spec text--menu"> Выгул животных</p>
+									</div>
+									<div class="advert__more-spec-box grid">
+										<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+										<p class="advert__more-spec text--menu"> Уборка по дому</p> 
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				 
+			</section>
+		</div>
+	</div>
+	
+	<footer class="footer">  
+		<div class="container grid"> 
+			<a href="" class="arrow-on-top"><img alt="" src="img/arrow-on-top.svg" class="arrow-on-top__img"></a>
+			<div class="footer__box">
+				<div class="footer__logo-box"><img src="img/logo.png" alt="" class="footer__logo img-responsive"></div>
+				<p class="footer__desc">Сервис поиска специалистов и работодателей в сфере ухода за лежачими больными</p>
+				<div class="footer__social">
+					<a href="#" class="footer__social-link"> 
+						<svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 46 48" fill="none">
+							<path d="M23 46.2559C35.1503 46.2559 45 36.32 45 24.0635C45 11.807 35.1503 1.87109 23 1.87109C10.8497 1.87109 1 11.807 1 24.0635C1 36.32 10.8497 46.2559 23 46.2559Z" stroke="#161522" stroke-width="2"/>
+							<path d="M23.7 32.0326C23.7 32.0326 24.2 32.0326 24.4 31.73C24.6 31.5282 24.6 31.1247 24.6 31.1247C24.6 31.1247 24.6 29.1072 25.5 28.8046C26.4 28.502 27.6 30.7212 28.8 31.5282C29.7 32.1335 30.5 32.0326 30.5 32.0326H33.8C33.8 32.0326 35.5 31.9317 34.7 30.5195C34.6 30.4186 34.2 29.5107 32.2 27.695C30.1 25.7784 30.4 26.081 32.9 22.7521C34.4 20.7346 35 19.5242 34.9 18.9189C34.7 18.4145 33.6 18.5154 33.6 18.5154H29.8C29.8 18.5154 29.5 18.5154 29.3 18.6163C29.1 18.7172 29 19.0198 29 19.0198C29 19.0198 28.4 20.6338 27.6 21.9451C25.9 24.7696 25.3 24.8705 25 24.7696C24.4 24.3661 24.5 23.1556 24.5 22.2478C24.5 19.5241 24.9 18.4145 23.7 18.1119C23.3 18.011 23 17.9102 21.9 17.9102C20.6 17.9102 19.4 17.9102 18.8 18.2128C18.4 18.4145 18 18.9189 18.2 18.9189C18.4 18.9189 19 19.0198 19.3 19.4233C19.7 19.9276 19.7 21.1381 19.7 21.1381C19.7 21.1381 19.9 24.3661 19.2 24.7696C18.7 25.0723 18 24.467 16.5 21.9451C15.7 20.6338 15.2 19.2215 15.2 19.2215C15.2 19.2215 15.1 18.9189 14.9 18.818C14.7 18.6163 14.3 18.6163 14.3 18.6163H10.7C10.7 18.6163 10.2 18.6163 10 18.818C9.80002 19.0198 10 19.4233 10 19.4233C10 19.4233 12.8 25.8792 16 29.2081C18.9 32.2344 22.2 32.0326 22.2 32.0326H23.7Z" fill="#161522"/>
+							</svg>
+					</a>
+					<a href="#" class="footer__social-link"> 
+						<svg class="footer__social-img" xmlns="http://www.w3.org/2000/svg"   viewBox="0 0 46 48" fill="none">
+							<path d="M23 46.2657C35.1503 46.2657 45 36.3298 45 24.0733C45 11.8167 35.1503 1.88086 23 1.88086C10.8497 1.88086 1 11.8167 1 24.0733C1 36.3298 10.8497 46.2657 23 46.2657Z" stroke="#161522" stroke-width="2"/>
+							<path d="M23.0001 15.6002C24.4001 15.6002 25.6001 16.7099 25.6001 18.223C25.6001 19.6352 24.4001 20.8457 23.0001 20.8457C21.6001 20.8457 20.4001 19.6352 20.4001 18.223C20.4001 16.8107 21.6001 15.6002 23.0001 15.6002ZM23.0001 24.4772C26.4001 24.4772 29.2001 21.6527 29.2001 18.223C29.2001 14.7932 26.4001 11.9688 23.0001 11.9688C19.6001 11.9688 16.8001 14.7932 16.8001 18.223C16.7001 21.6527 19.5001 24.4772 23.0001 24.4772ZM25.5001 29.5209C26.8001 29.2183 28.0001 28.7139 29.1001 28.0078C30.0001 27.5034 30.2001 26.2929 29.7001 25.4859C29.2001 24.679 28.0001 24.3763 27.2001 24.8807C24.6001 26.4947 21.4001 26.4947 18.8001 24.8807C17.9001 24.3763 16.8001 24.5781 16.3001 25.4859C15.8001 26.2929 16.0001 27.5034 16.9001 28.0078C18.0001 28.7139 19.3001 29.2183 20.5001 29.5209L17.0001 33.0515C16.3001 33.7577 16.3001 34.9682 17.0001 35.6743C17.4001 36.0778 17.8001 36.1787 18.3001 36.1787C18.8001 36.1787 19.2001 35.9769 19.6001 35.6743L23.0001 32.2445L26.4001 35.6743C27.1001 36.3804 28.3001 36.3804 29.0001 35.6743C29.7001 34.9682 29.7001 33.7577 29.0001 33.0515L25.5001 29.5209Z" fill="#161522"/>
+							</svg>
+					</a>
+				</div>
+			
+			</div>
+			<div class="footer__box">
+				<p class="footer__title">Контакты для связи:</p> 
+				<div class="footer__contacts">
+					<a href="tel:+78124544585" class="footer__link footer__link--phone text"> <i class="icon-phone"></i> 8 (812) 457-75-85</a>
+					<a href="mailto:your.house@mail.ru" class="footer__link footer__link--mail text"><i class="icon-mail"></i> your.house@mail.ru</a>
+					<p class="footer__link footer__link--geo text"><i class="icon-geo"></i> г. Екатеринбург, ул Малышева 76 </p>
+				</div>
+			</div>
+			<div class="footer__box">
+				<p class="footer__title">Дополнительно:</p>
+				<div class="footer__more">
+					<a href="" class="footer__link text">О проете</a>
+					<a href="" class="footer__link text">Сотрудничество</a>
+					<a href="" class="footer__link text">Реклама</a>
+				</div>
+			</div>
+			<div class="footer__box">
+				<p class="footer__title">Заголовок:</p>
+				<div class="footer__seo">
+					<a href="" class="footer__link text">SEO-раздел</a>
+					<a href="" class="footer__link text">SEO-раздел</a>
+					<a href="" class="footer__link text">SEO-раздел</a>
+				</div>
+			</div>
+			<div class="footer__bot grid">
+				<p class="footer__text text">© ООО «Название компании»</p> 
+				<div class="footer__text-box">
+					<a href="#" class="footer__link text">Политика конфиденциальности</a>
+					<p class="footer__text text">Разработка сайта: invite</p> 
+				</div>
+			</div>
+		</div>
+			<div class="footer__line"></div>  
+	</footer>
+	 <div id="login" class="mfp-hide white-popup">
+		 <div class="container grid">
+			<div class="white-popup__box">
+				<p class="white-popup__title">Войдите в личный кабинет и пользуйтесь функционалом сервиса бесплатно</p>
+				<form id="order-phone" class="white-popup__form">
+					<input type="text" name="login" class="white-popup__input popup-text" placeholder="Ваш телефон или e-mail">
+					<input type="text" name="password" class="white-popup__input popup-text" placeholder="Пароль" required="">
+					<button type="submit" class="white-popup__btn main-btn">Войти</button>
+					<a href="#" class="white-popup__url popup-text">Забыли пароль?</a>
+					<p class="white-popup__description">При входе, вы принимаете условия Пользовательского соглашения и Политики конфиденциальности своих персональных данных.</p>
+					<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+				</form> 
+			</div>
+			<div class="white-popup__box white-popup__box--reg"> 
+				<div class="white-popup__title-box">
+					<p class="white-popup__title white-popup__title--right text-blue">У вас ещё нет аккаунта?</p> 
+					<p class="white-popup__title white-popup__title--right">Пройдите регистрацию за 1 минуту</p>  
+				</div>
+				<a href="" class="white-popup__btn white-popup__btn--reg main-btn">Зарегестрироваться</a>
+				<p class="white-popup__text">После регистрации вы сможете находить работу или специалистов быстро и бесплатно</p>
+			</div>
+		</div>
+	 </div>
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

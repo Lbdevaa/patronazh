@@ -21,17 +21,26 @@
 @function icon-char($filename)
     $char: ""
 
-    @if $filename == geo
+    @if $filename == check
         $char: "\E001"
     
-    @if $filename == mail
+    @if $filename == geo
         $char: "\E002"
     
-    @if $filename == phone-big
+    @if $filename == heart
         $char: "\E003"
     
-    @if $filename == phone
+    @if $filename == mail-2
         $char: "\E004"
+    
+    @if $filename == mail
+        $char: "\E005"
+    
+    @if $filename == phone-big
+        $char: "\E006"
+    
+    @if $filename == phone
+        $char: "\E007"
     
     @return $char
 
@@ -45,8 +54,14 @@
         
         content: icon-char($filename)
 
+.icon-check
+    +icon(check)
 .icon-geo
     +icon(geo)
+.icon-heart
+    +icon(heart)
+.icon-mail-2
+    +icon(mail-2)
 .icon-mail
     +icon(mail)
 .icon-phone-big

@@ -1,5 +1,5 @@
 $(function () {
-  // Custom JS
+  //slider
   $(".reviews-slider").slick({
     dots: true,
     slidesToShow: 1,
@@ -38,5 +38,44 @@ $(function () {
   $(".open-popup").magnificPopup({
     type: "inline",
     midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  });
+
+  //specialists
+
+  //check label
+  $(".aside__label").click(function () {
+    $(this).toggleClass("active");
+    $(this).children(" input").attr("checked", "checked");
+  });
+
+  //sort
+  $(".sort__btn").click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass("active");
+  });
+
+  //like
+  $(".advert__like").click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass("active");
+  });
+
+  //show more info user ads
+
+  $(".advert__more-url").click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass("active");
+    $(this)
+      .parents(".advert")
+      .children(".advert__more-info")
+      .toggleClass("active");
+  });
+
+  //show filter mobile
+  $(".specialists-inner__btn").click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass("active");
+    $(".aside").toggleClass("active");
+    $(".specialists-ads__sort").toggleClass("active");
   });
 });

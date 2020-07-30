@@ -5,6 +5,8 @@
 @import "icons"
 
 // Пользовательские стили
+a
+  color: $dark
 .text
   font-family: $FPTBOOK
   font-size: em(18px)
@@ -59,11 +61,13 @@
   border-radius: 5px
   color: #ffffff
   display: inline-block
+  transition: ease-in all .3s
   &:hover
     background-color: $pink
   &--white
     background-color: #fff
     color: $blue
+    transition: ease-in all .3s
     &:hover
       background-color: $lblue
       color: $dark
@@ -304,6 +308,7 @@
     margin: 0 0 em(5px)
     position: relative
     list-style: none
+    transition: ease-in all .3s
     &::before
       position: absolute
       content: ''
@@ -327,6 +332,7 @@
   &__box
     border: 1px solid $blue
     border-radius: 5px
+    transition: ease-in all .3s
     &:hover
       background-color: $lblue
   &__img-box
@@ -470,6 +476,11 @@
 .footer
   padding: 0 0 30px
   position: relative
+  &__contacts,   &__more, &__seo
+    padding: 24px 0
+  &__box
+    grid-template-rows: max-content 1fr 1fr
+
   &__line
     height: 2px
     width: 100%
@@ -491,6 +502,7 @@
     font-weight: 300
     max-width: 290px
     margin: 0
+    padding: 20px 0
   &__title
     font-weight: 600
     font-size: em(24px)
@@ -516,8 +528,6 @@
   &__text
     align-self: end
     margin: 0
-  &__contacts, &__desc, &__more, &__seo
-    padding: 20px 0
 
 .footer--mobile
   display: none
@@ -716,6 +726,8 @@
   font-size: em(14px)
   font-family: $FPTBOOK
   line-height: 1.6
+  >div
+    padding: 0
   &__url
     text-decoration: none
     color: $dark
@@ -744,7 +756,9 @@
   >div
     grid-template-columns: 225px 1fr
     grid-column-gap: 55px
-
+    padding: 0
+  &__btn
+    display: none
 .aside
   &__label
     grid-template-columns: max-content 1fr
@@ -753,6 +767,9 @@
     &--price
       .aside__input-price
         margin-right: 10px
+    &.active
+      .aside__input-check
+        appearance: auto
   &__block
     margin-bottom: 30px
     &-title
@@ -763,14 +780,14 @@
     border-radius: 5px
     vertical-align: middle
     border: 1px solid #ddd
-    -webkit-appearance: none
+    appearance: none
     outline: none
   &__input-price
     width: 70px
     border-radius: 5px
     vertical-align: middle
     border: 1px solid #ddd
-    -webkit-appearance: none
+    appearance: none
     outline: none
 
 .sort
@@ -784,6 +801,7 @@
     background-color: #fff
     color: $dark
     position: relative
+    transition: ease-in all .3s
     &:hover
       background-color: $blue
       color: #ffffff
@@ -813,12 +831,15 @@
     margin-bottom: 40px
 .ads
   grid-row-gap: 30px
+  &--specialists
+    margin-bottom: 40px
 .advert
   padding: 30px
   grid-template-columns: repeat(2,max-content) 1fr
   grid-gap: 30px
   background-color: #FBFBFB
   border-radius: 10px
+  transition: ease-in all .3s
   &:hover
     background-color: $lblue
   &__btn
@@ -828,10 +849,18 @@
     padding: em(8px) 0
     &:last-of-type
       margin: 0
+  &__btns
+    &--mobile
+      display: none
+  &__user-photo
+    position: relative
   &__img-box
     width: 200px
     height: 215px
     margin-bottom: 10px
+    border-radius: 10px
+    background: url(../img/avatar.png) no-repeat center center
+    background-size: cover
   &__img
     width: 100%
     height: 100%
@@ -841,6 +870,18 @@
     max-width: max-content
     display: inline-block
     margin: 0 em(15px) em(15px) 0
+  &__like
+    text-decoration: none
+    color: $dark
+    transition: all ease-in .3s
+    &.active
+      color: $blue
+    &--mobile
+      display: none
+      position: absolute
+      right: -40px
+      top: 50%
+      // transform: translate(0, -50%)
   &__desc
     max-width: 370px
     margin: 0 0 em(40px)
@@ -859,6 +900,9 @@
     color: $blue
     position: relative
     text-decoration: none
+    &--mobile
+      display: none
+      max-width: max-content
     &::after
       position: absolute
       top: 50%
@@ -891,6 +935,9 @@
       justify-content: space-between
       &-box
         margin-bottom: 20px
+  &__short-reviews
+    a
+      margin-right: 10px
   &__more-info
     grid-column: 2/4
     grid-template-columns: max-content 1fr
@@ -916,4 +963,38 @@
     margin-bottom: 10px
     grid-template-columns: max-content 1fr
     grid-column-gap: 20px
+
+.pagination
+  padding: 20px
+  >div
+    position: relative
+  &--specialists
+    margin-bottom: 50px
+  &__list
+    margin: 0 auto
+    list-style: none
+    max-width: max-content
+
+  &__item
+    display: inline-block
+    border-radius: 5px
+    border: 1px solid $gray
+    padding: em(5px) 0
+    margin: 0 em(12px) 0 0
+    &.active
+      background-color: $blue
+      .pagination__url
+        color: #ffffff
+  &__url
+    color: $dark
+    text-decoration: none
+    padding: em(10px) em(16px)
+    font-weight: 600
+  &__arrow-on-top
+    display: block
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translate(-50%, -50%)
+
 @import "media" // Всегда в конце

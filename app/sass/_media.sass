@@ -232,6 +232,109 @@
 			width: 100%
 		&__btn--reg
 			margin-bottom: 20px
+
+	// specialists
+	.breadcrumbs
+		padding: 20px 0 10px
+		>div
+			padding: 0 20px
+
+	.notice
+		padding: 0 20px
+		>div
+			padding: 25px 13px
+		&__text
+			margin: 0 0 em(16px)
+			text-align: center
+		&__btn
+			margin: auto
+			max-width: max-content
+
+	.specialists-inner
+		>div
+			grid-template-columns: 1fr
+			padding: 0 20px
+		&__btn
+			position: relative
+			margin-bottom: 20px
+			&::after
+				position: absolute
+				top: 50%
+				right: 10px
+				-webkit-transform: translate(0,-50%)
+				-ms-transform: translate(0,-50%)
+				transform: translate(0,-50%)
+				content: ''
+				background: url(../img/arrow-right-white.svg) no-repeat center center
+				display: block
+				height: 16px
+				width: 16px
+				-webkit-transition: all ease-in .3s
+				-o-transition: all ease-in .3s
+				transition: all ease-in .3s
+			&.active
+				color: $blue
+				background-color: #fff
+				border-bottom: 2px solid $gray
+				&::after
+					background: url(../img/cross-blue.svg) no-repeat center center
+
+	.aside
+		display: none
+		&__filter
+			padding: 0 40px
+			border-bottom: 2px solid $gray
+			margin-bottom: 15px
+		&__block
+			max-width: 230px
+		&.active
+			display: block
+	.specialists-ads
+		&__sort
+			grid-template-columns: 1fr
+			display: none
+			&.active
+				display: grid
+
+	.advert
+		grid-template-columns: 1fr
+		padding: 0
+		&__more-info
+			grid-column: 1
+			grid-template-columns: 1fr
+		&__short
+			max-width: 100%
+			justify-self: auto
+			&-spec
+				&:last-of-type
+					margin: 0
+				span
+					font-size: em(20px)
+		&__desc
+			margin-bottom: 0
+		&__more-box
+			&:nth-of-type(2)
+				justify-self: auto
+			&:first-of-type
+				width: auto
+		&__user-photo
+			margin: auto
+		&__more-url
+			display: none
+			&--mobile
+				display: block
+		&__more-title
+			margin-bottom: em(8px)
+		&__btns
+			display: none
+			&--mobile
+				display: block
+		&__like
+			display: none
+			&--mobile
+				display: block
+	.pagination__arrow-on-top
+		display: none
 	/**/
 
 /* Extra Small Devices, Phones */

@@ -78,4 +78,10 @@ $(function () {
     $(".aside").toggleClass("active");
     $(".specialists-ads__sort").toggleClass("active");
   });
+
+  // reviews active
+  $(".reviews-page__sort-btn").click(function (event) {
+    event.preventDefault();
+    $(this).toggleClass("active");
+  });
 });

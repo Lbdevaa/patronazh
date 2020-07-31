@@ -736,15 +736,13 @@ a
   font-size: em(14px)
   font-family: $FPTBOOK
   line-height: 1.6
-  >div
-    padding: 0
   &__url
     text-decoration: none
     color: $dark
   &__separator
     display: inline-block
     color: $dark
-    margin: 0 10px
+    margin: 0 em(4px)
     vertical-align: middle
   &__text
     display: inline-block
@@ -752,7 +750,7 @@ a
 
 // specialists
 .notice
-  >div
+  &__box
     background-color: $blue
     border-radius: 10px
     padding: 40px 60px
@@ -766,7 +764,6 @@ a
   >div
     grid-template-columns: 225px 1fr
     grid-column-gap: 55px
-    padding: 0
   &__btn
     display: none
 .aside
@@ -995,13 +992,13 @@ a
   padding: 20px
   >div
     position: relative
+
   &--specialists
     margin-bottom: 50px
   &__list
     margin: 0 auto
     list-style: none
     max-width: max-content
-
   &__item
     display: inline-block
     border-radius: 5px
@@ -1017,12 +1014,23 @@ a
     text-decoration: none
     padding: em(10px) em(16px)
     font-weight: 600
+    transition: all ease-in .3s
+    border-radius: 5px
+    &:hover
+      background-color: $blue
+      color: #ffffff
   &__arrow-on-top
     display: block
     position: absolute
     right: 0
     top: 50%
     transform: translate(-50%, -50%)
+  &__btn-comment
+    display: block
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(10%,-50%)
 .banner-about
   background-color: $lblue
   padding: 70px 0 85px
@@ -1066,7 +1074,7 @@ a
       padding-left: 20px
     &-list
       margin: 0
-      max-width: 290px
+      max-width: 340px
       list-style: none
     &-item
       margin: 0 0 em(6px)
@@ -1083,6 +1091,7 @@ a
     margin-bottom: 15px
   &__img
     height: 100%
+    object-fit: cover
   &--about
     margin-bottom: 110px
   &__text-box
@@ -1094,6 +1103,7 @@ a
   >div
     grid-template-columns: 1fr 200px
     grid-gap: 85px
+    align-items: center
   &__title
     margin: 0 0 em(13px)
     color: #ffffff
@@ -1104,4 +1114,169 @@ a
     margin-right: 40px
   &--about
     margin-bottom: 50px
+
+.use
+  &__title
+    margin: 0 0 em(15px)
+  &__blocks
+    grid-template-columns: max-content 1fr
+    margin-bottom: 50px
+    grid-column-gap: 70px
+    &:nth-child(odd)
+      justify-items: end
+      grid-template-columns: 1fr max-content
+  &__block
+    &-title
+      margin: 0 0 em(8px)
+    &-list
+      margin: 0
+      padding: 0 0 0 em(50px)
+    &-item
+      list-style: decimal
+      color: $blue
+      margin-bottom: em(12px)
+      padding: 0 0 0 5px
+      line-height: .7
+      span
+        color: $dark
+        font-size: em(7.5px)
+        vertical-align: middle
+        font-family: $FPTBOOK
+        font-weight: 300
+  &__img
+    height: 450px
+    width: 560px
+    object-fit: cover
+    border-radius: 5px
+  &--main
+    margin-bottom: 110px
+
+// reviews page
+.reviews-page
+  margin-bottom: 30px
+  &__title
+    margin: 0 0 em(7.5px)
+  &__sort
+    margin-bottom: 40px
+    &-btn
+      font-family: $FPTBOOK
+      background-color: #fff
+      color: $dark
+      transition: ease-in all .3s
+      position: relative
+      border: 1px solid #b6b6ba4d
+      font-size: em(18px)
+      margin-right: 10px
+      padding: em(4px) em(10px)
+      width: 190px
+      &::after
+        position: absolute
+        top: 50%
+        right: 10px
+        transform: translate(0,-50%)
+        content: ''
+        background: url(../img/arrow-more.svg) no-repeat center center
+        display: block
+        height: 16px
+        width: 16px
+      &:hover
+        background-color: #108de7
+        color: #fff
+        position: relative
+      &.active
+        background-color: #108de7
+        color: #fff
+        position: relative
+        &::after
+          background: url(../img/cross.svg) no-repeat center center
+
+.comment
+  grid-template-columns: max-content 1fr max-content
+  grid-gap: 30px
+  border: 1px $blue solid
+  border-radius: 5px
+  padding: 40px 50px 40px 40px
+  margin-bottom: 20px
+  &__rating
+    align-self: end
+  &__user
+    &-img
+      width: 140px
+      height: 140px
+      border-radius: 50%
+      object-fit: cover
+      align-self: center
+    &-name
+      margin: 0 0 em(3px)
+    &-status
+      margin: 0 0 em(16px)
+  &__text-box
+    max-width: 620px
+  &__text
+    margin: 0 0 em(2px)
+  &__date
+    margin: 0
+  &__star
+    width: 28px
+    height: 28px
+    &.fill
+      fill: $blue
+  &__more
+    justify-items: end
+
+  // contacts
+.contacts-page
+  padding: 0 0 110px
+  >div
+    grid-template-columns: 1fr max-content
+    grid-column-gap: 90px
+  &__title
+    grid-column: 1/3
+    margin: 0 0 em(15px)
+  &__info-box
+    align-self: center
+    grid-row-gap: 70px
+.info
+  &__title
+    margin: 0 0 em(6px)
+  &__link
+    position: relative
+    text-decoration: none
+    display: block
+    margin-bottom: em(10px)
+
+.form
+  border: 1px solid $blue
+  border-radius: 5px
+  padding: 30px 40px
+  &__title
+    margin: 0 0 em(8px)
+  &__fields
+    grid-template-columns: 1fr 1fr
+    grid-gap: 15px 20px
+    margin-bottom: 30px
+  &__field
+    &--area
+      grid-column: 1/3
+  &__label
+    display: block
+  &__input
+    border: 2px solid $gray
+    border-radius: 5px
+    padding: em(13px) em(20px)
+    width: 100%
+    background: transparent
+  &__textarea
+    width: 100%
+    resize: none
+  &__url
+    max-width: 400px
+    display: inline-block
+    margin-right: 20px
+    text-decoration: none
+  &__btn
+    border: none
+    cursor: pointer
+    float: right
+    padding: em(8px) em(39px)
 @import "media" // Всегда в конце

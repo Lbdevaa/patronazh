@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>О сервисе</title>
+	<title>Контакты</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
@@ -39,9 +39,9 @@
 					<li class="nav__item"><a href="use.html" class="nav__url">Как пользоваться</a></li>  
 					<li class="nav__item arrow-more"><a href="#" class="nav__url">Ещё</a>
 						<ul class="second-nav">
-							<li class="second-nav__item"><a href="about.html" class="second-nav__url active">О сервисе</a></li>
-							<li class="second-nav__item"><a href="reviews.html" class="second-nav__url">Отзывы</a></li>
-							<li class="second-nav__item"><a href="contacts.html" class="second-nav__url">Контакты</a></li>
+							<li class="second-nav__item"><a href="about.html" class="second-nav__url">О сервисе</a></li>
+							<li class="second-nav__item"><a href="reviews.html" class="second-nav__url ">Отзывы</a></li>
+							<li class="second-nav__item"><a href="contacts.html" class="second-nav__url active">Контакты</a></li>
 							<li class="second-nav__item"><a href="help.html" class="second-nav__url">Помощь</a></li> 
 						</ul>
 					</li>
@@ -120,83 +120,54 @@
 			</div>
 		</div>
 	</header> 
-	 <section class="banner-about">
-		 <div class="container">
-			 <h2 class="banner-about__title text--h2">Мы создали этот <span class="text--blue">сервис для вашего удобства</span></h2>
-			 <div class="banner-about__text-box">
-				 <p class="banner-about__text text--h5">Сервис помогает специалистам по уходу за лежачими больними найти работу, а так же находить квалифицированного специалиста для своих близких.
-					Без посредников, переплат и в максимально короткий срок. </p>
-			 </div>
-			 <a href="#" class="banner-about__btn main-btn">Создать резюме</a>
-			 <a href="#" class="banner-about__btn main-btn">Найти специалиста</a>
-			</div>
-			<img src="img/about-project-3.png" alt="" class="banner-about__img img-responsive">
+	<section class="breadcrumbs">
+		<div class="container">
+			<a class="breadcrumbs__url" href="http://geo.remote24.ru/">Главная</a>
+			<p class="breadcrumbs__separator">•</p>
+			<p class="breadcrumbs__text text--tag-1">Контакты</p>
+		</div>
+	</section>
+	 <section class="contacts-page">
+		 <div class="container grid">
+				<h2 class="contacts-page__title text--h2 text--blue">Контакты</h2> 
+				<form action="" class="form contacts-page__form">
+					<h4 class="form__title text--h4"> <span class="text--blue">Напишите нам</span>, если у вас возник вопрос</h4>
+					<div class="form__fields grid"> 
+						<div class="form__field">
+							<label for="fio" class="form__label">Имя Фамилия</label>
+							<input name ="fio" type="text" class="form__input text" placeholder="Имя Фамилия" required> 
+						</div>
+						<div class="form__field">	
+							<label for="" class="form__label">Ваш e-mail</label>
+							<input name ="email" type="text" class="form__input text" placeholder="help@mail.ru"> 
+						</div>
+						<div class="form__field form__field--area">
+							<label class="form__label" for="question">Ваш вопрос</label>
+							<textarea name="question" id="" cols="30" rows="10" class="form__textarea form__input text" placeholder="Напишите нам, если у вас возник вопрос" required></textarea>
+						</div>
+					</div>
+					<a href="#" class="form__url text--blue text--tag-1">При нажатии на кнопку «Задать вопрос» , вы принимаете условия  Пользовательского соглашения и Политики конфиденциальности</a>
+					<button class="main-btn form__btn text--button">Задать вопрос</button>
+				</form> 
+				<div class="info-box contacts-page__info-box grid">
+					<div class="info contacts-page__info">
+						<h4 class="info__title text--h4">Техническая поддержка:</h4>
+						<a href="tel:+78124544585" class="info__link text"><i class="icon-phone"></i> 8 (800) 233-33-33</a>
+						<a href="mailto:top@russia.ru" class="info__link text"><i class="icon-mail"></i> top@russia.ru</a>
+					</div>
+					<div class="info contacts-page__info">
+						<h4 class="info__title text--h4">Сотрудничество:</h4>
+						<a href="tel:+78124544585" class="info__link text"><i class="icon-phone"></i> 8 (800) 233-33-33</a>
+						<a href="mailto:top@russia.ru" class="info__link text"><i class="icon-mail"></i> offer@russia.ru</a>
+					</div>
+					<div class="info contacts-page__info">
+						<h4 class="info__title text--h4">Наш адрес:</h4>
+						 <a href="mailto:top@russia.ru" class="info__link text"><i class="icon-geo"></i> г. Екатеринбург, ул Малышева 76 </a>
+					</div>
+				</div>
+		 </div>
 	 </section>
-	 <section class="short-banner short-banner--about">
-		<div class="container"> 
-			<h2 class="short-banner__title section-title">Почему <span class="text--blue">выбирают наш сервис?</span></h2>
-			<div class="short-banner__cards grid"> 
-				<div class="short-banner__card">
-					<div class="short-banner__img-box">
-						<img src="img/advantage-1.svg" alt="" class="short-banner__card-img img-responsive">
-					</div>
-					<p class="short-banner__card-text text">Работаем по всей Российской Федерации</p>
-				</div>
-				<div class="short-banner__card">
-					<div class="short-banner__img-box">
-						<img src="img/advantage-2.svg" alt="" class="short-banner__card-img img-responsive">
-					</div>
-					<p class="short-banner__card-text text">Список резюме обновляется ежедневно</p>
-				</div>
-				<div class="short-banner__card">
-					<div class="short-banner__img-box">
-						<img src="img/advantage-3.svg" alt="" class="short-banner__card-img img-responsive">
-					</div>
-					<p class="short-banner__card-text text">Безопасная прямая сделка для обеих сторон</p>
-				</div>  
-			</div>
-		</div>
-	</section>
-	<section class="opportunities opportunities--about">
-		<div class="container grid">
-			<h2 class="opportunities__title text--h2">
-				Благодаря сервису <span class="text--blue">вы можете</span> 
-			</h2>
-			<div class="opportunities__block">
-				<div class="opportunities__img-box">
-					<img src="img/about-project-4.png" alt="" class="opportunities__img img-responsive">
-				</div>
-				<p class="opportunities__block-title text--h6">Если вы являетесь специалистом </p>
-				<ul class="opportunities__block-list">
-					<li class="opportunities__block-item text">Быстро найти работу</li>
-					<li class="opportunities__block-item text"> Работать напрямую с заказчиком и больше зарабатывать</li>
-					<li class="opportunities__block-item text">Выложить вакансию и получать обращения и звонки уже сегодня</li>
-				</ul>
-			</div>
-			<div class="opportunities__block">
-				<div class="opportunities__img-box">
-					<img src="img/about-project-5.png" alt="" class="opportunities__img img-responsive">
-				</div>
-				<p class="opportunities__block-title text--h6">Если вы ищите специалиста  </p>
-				<ul class="opportunities__block-list">
-					<li class="opportunities__block-item text">Быстро найти специалиста</li>
-					<li class="opportunities__block-item text"> Платить за работу напрямую и исключать переплату</li>
-					<li class="opportunities__block-item text"> Работать с проверенными специалистами вашего города</li>
-				</ul>
-			</div>
-			<div class="opportunities__block">
-				<div class="opportunities__img-box">
-					<img src="img/about-project-6.png" alt="" class="opportunities__img img-responsive">
-				</div>
-				<p class="opportunities__block-title text--h6">Если вы ищите товары для ухода  </p>
-				<ul class="opportunities__block-list">
-					<li class="opportunities__block-item text"> Найти нужные товары в нашем каталоге</li>
-					<li class="opportunities__block-item text">  Получить их бесплатно даже из другого города</li>
-					<li class="opportunities__block-item text"> Самостоятельно выложить товары и помочь другим людям</li>
-				</ul>
-			</div>
-		</div>
-	</section>
+	
 	<section class="notice-now notice-now--about">
 		<div class="container grid">
 			<div class="notice-now__block-text"> 
@@ -209,7 +180,7 @@
 	</section>
 	<footer class="footer">  
 		<div class="container grid"> 
-			<a href="" class="arrow-on-top"><img alt="" src="img/arrow-on-top.svg" class="arrow-on-top__img"></a>
+			<a href="#" class="arrow-on-top"><img alt="" src="img/arrow-on-top.svg" class="arrow-on-top__img"></a>
 			<div class="footer__box">
 				<div class="footer__logo-box"><img src="img/logo.png" alt="" class="footer__logo img-responsive"></div>
 				<p class="footer__desc">Сервис поиска специалистов и работодателей в сфере ухода за лежачими больными</p>

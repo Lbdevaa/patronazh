@@ -238,12 +238,8 @@
 	// specialists
 	.breadcrumbs
 		padding: 20px 0 10px
-		>div
-			padding: 0 20px
-
 	.notice
-		padding: 0 20px
-		>div
+		&__box
 			padding: 25px 13px
 		&__text
 			margin: 0 0 em(16px)
@@ -251,7 +247,8 @@
 		&__btn
 			margin: auto
 			max-width: max-content
-
+		&--specialists
+			margin-bottom: 30px
 	.specialists-inner
 		>div
 			grid-template-columns: 1fr
@@ -355,9 +352,18 @@
 				grid-row: 1/4
 				width: 200px
 				height: 100%
-	.pagination__arrow-on-top
-		display: none
 
+	.pagination
+		&__arrow-on-top
+			display: none
+		&__btn-comment
+			position: unset
+			transform: none
+			grid-row: 2
+		&--reviews
+			>div
+				display: grid
+				grid-gap: 30px
 	// about
 
 	.banner-about
@@ -413,6 +419,121 @@
 			width: 250px
 		&__img
 			display: none
+	.use
+		&__title
+			text-align: center
+			font-size: em(36px)
+		&__blocks
+			grid-template-columns: 1fr
+			grid-gap: 20px
+			margin-bottom: 40px
+			&:nth-child(odd)
+				grid-template-columns: 1fr
+		&__block
+			&-title
+				font-size: em(24px)
+				margin: 0 0 em(8px)
+			&-list
+				padding-left: em(24px)
+			&-item
+				font-size: em(24px)
+				span
+					font-size: em(14px)
+		&__img
+			height: 270px
+			width: auto
+			grid-row: 1
+		&--main
+			margin-bottom: 40px
+
+	//reviews
+
+	.reviews-page
+		&__title
+			font-size: em(36px)
+			text-align: center
+			margin-bottom: em(15px)
+		&__sort
+			margin-bottom: 30px
+			display: grid
+			grid-template-columns: 1fr 1fr
+			grid-gap: 10px
+			&-btn
+				font-size: em(15px)
+				width: auto
+				display: inline-block
+				padding: em(4px) em(10px)
+				text-align: left
+				margin: 0
+
+	.comment
+		grid-template-columns: 1fr
+		justify-items: center
+		text-align: center
+		grid-gap: 15px
+		&__more
+			justify-items: center
+		&__user
+			&-name
+				font-size: em(20px)
+			&-status
+				margin-bottom: em(10px)
+			&-img
+				width: 64px
+				height: 64px
+		&__text
+			margin: 0
+		&__more
+			grid-gap: 20px
+		&__date
+			grid-row: 2
+
+	// contacts page
+	.contacts-page
+		padding-bottom: 30px
+		>div
+			grid-template-columns: 1fr
+			grid-gap: 0
+		&__title
+			grid-column: 1/2
+			text-align: center
+			font-size: em(36px)
+			margin-bottom: em(10px)
+		&__form
+			grid-row: 3
+		&__info-box
+			text-align: center
+			grid-gap: 20px
+			margin-bottom: 50px
+
+	.info
+		&__title
+			font-size: em(24px)
+			margin-bottom: em(8px)
+		&__link
+			margin-bottom: em(10px)
+
+	.form
+		background-color: $lblue
+		border: none
+		padding: 20px 0
+		&__title
+			margin-bottom: em(10px)
+		&__fields
+			grid-template-columns: 1fr
+			margin: 0
+
+		&__field
+			&--area
+				grid-column: 1/2
+		&__input
+			padding: em(13px)
+		&__url
+			margin: 0 0 em(26px)
+		&__btn
+			float: unset
+			margin: auto
+			padding: em(8px) em(37px)
 	/**/
 
 /* Extra Small Devices, Phones */

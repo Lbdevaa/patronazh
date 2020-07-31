@@ -84,4 +84,7 @@ $(function () {
     event.preventDefault();
     $(this).toggleClass("active");
   });
+
+  //input mask phone
+  $("input[name*='phone']").inputmask("+7 (999) 999-99-99");
 });

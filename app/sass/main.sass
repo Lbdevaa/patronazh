@@ -357,6 +357,7 @@ a
     margin: 0
     padding: em(11px) em(16px)
     text-align: center
+
 .find
   padding: 90px 0
   background-color: $lblue
@@ -393,6 +394,7 @@ a
       content: "—"
       color: $blue
       left: -10px
+
 .reviews
   padding: 120px 0
 
@@ -456,6 +458,7 @@ a
       left: auto
       background: url(../img/slider-arrow-right.svg) no-repeat center center
       background-size: cover
+
 .small-banner
   background-color: $lblue
   padding: 90px 0
@@ -1224,26 +1227,14 @@ a
   &__more
     justify-items: end
 
-  // contacts
-.contacts-page
-  padding: 0 0 110px
-  >div
-    grid-template-columns: 1fr max-content
-    grid-column-gap: 90px
+.comment-popup
+  padding: 60px 40px
   &__title
-    grid-column: 1/3
-    margin: 0 0 em(15px)
-  &__info-box
-    align-self: center
-    grid-row-gap: 70px
-.info
-  &__title
-    margin: 0 0 em(6px)
-  &__link
-    position: relative
-    text-decoration: none
-    display: block
-    margin-bottom: em(10px)
+    margin: 0 0 em(22px)
+  .mfp-close
+    right: 60px
+    top: 60px
+    transform: translate(50%, -50%)
 
 .form
   border: 1px solid $blue
@@ -1279,4 +1270,110 @@ a
     cursor: pointer
     float: right
     padding: em(8px) em(39px)
+
+.form-comment
+  &__input
+    display: inline-block
+    width: 350px
+  &__btn
+    padding: em(8px) em(74px)
+  &__textarea
+    margin-bottom: 30px
+  &__url
+    max-width: 340px
+.rating-area
+  overflow: hidden
+  width: 190px
+  display: inline-block
+  float: right
+  &__text
+    text-align: right
+    margin: 0 0 em(10px)
+  > label
+    margin: 0 0 7px
+  &:not(:checked)
+    &> input
+      display: none
+    & > label
+      float: right
+      width: 36px
+      padding: 0
+      cursor: pointer
+      font-size: 50px
+      line-height: 50px
+      color: lightgrey
+      text-shadow: 1px 1px #bbb
+      &:before
+        content: ''
+        display: block
+        width: 32px
+        height: 30px
+        background: url(../img/star-clear.svg) no-repeat center center
+  > input:checked ~ label
+    // color: gold
+    // text-shadow: 1px 1px #c60
+    &:before
+      content: ''
+      display: block
+      width: 32px
+      height: 30px
+      background: url(../img/star-fill.svg) no-repeat center center
+  > label:active
+    position: relative
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label
+  &:before
+    background: url(../img/star-fill.svg) no-repeat center center
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label
+  &:before
+    background: url(../img/star-fill.svg) no-repeat center center
+
+  // contacts
+.contacts-page
+  padding: 0 0 110px
+  >div
+    grid-template-columns: 1fr max-content
+    grid-column-gap: 90px
+  &__title
+    grid-column: 1/3
+    margin: 0 0 em(15px)
+  &__info-box
+    align-self: center
+    grid-row-gap: 70px
+.info
+  &__title
+    margin: 0 0 em(6px)
+  &__link
+    position: relative
+    text-decoration: none
+    display: block
+    margin: 0 0 em(10px)
+
+// registry
+.registry
+  margin-bottom: 100px
+  &__title
+    margin: 0 0 em(15px)
+.form-registry
+  width: 750px
+  margin: auto
+  &__label
+    display: inline-block
+    margin: 0 40px 10px 0
+  &__title
+    margin: 0 0 em(15px)
+  &__checks
+    margin-bottom: 20px
+  &__url
+    margin-right: 10px
+  &__input-check
+    margin-right: 20px
+  &__btn
+    padding: em(8px) em(18px)
 @import "media" // Всегда в конце

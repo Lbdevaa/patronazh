@@ -203,7 +203,7 @@
 	</section>
 	<div class="pagination pagination--specialists pagination--reviews">
 		<div class="container">
-			<a href="#" class="pagination__btn-comment main-btn">Оставить отзыв</a>
+			<a href="#send-comment" class="pagination__btn-comment main-btn open-popup">Оставить отзыв</a>
 			<ul class="pagination__list">
 				<li class="pagination__item active"><a href="#" class="pagination__url text--tag-1">1</a></li>
 				<li class="pagination__item"><a href="#" class="pagination__url text--tag-1">2</a></li>
@@ -302,6 +302,33 @@
 				<a href="" class="white-popup__btn white-popup__btn--reg main-btn">Зарегестрироваться</a>
 				<p class="white-popup__text">После регистрации вы сможете находить работу или специалистов быстро и бесплатно</p>
 			</div>
+		</div>
+	 </div>
+	 <div id="send-comment" class="comment-popup white-popup mfp-hide">
+		<div class="container">
+			<p class="comment-popup__title text--h6">Оставить отзыв о сервисе</p>
+			<form action="" class="form-comment">
+				<input type="text" class="form__input form-comment__input" placeholder="Имя и Фамилия"> 
+				 
+				<div class="rating-area">
+					<input type="radio" id="star-5" name="rating" value="5">
+					<label for="star-5" title="Оценка «5»"></label>	
+					<input type="radio" id="star-4" name="rating" value="4">
+					<label for="star-4" title="Оценка «4»"></label>    
+					<input type="radio" id="star-3" name="rating" value="3">
+					<label for="star-3" title="Оценка «3»"></label>  
+					<input type="radio" id="star-2" name="rating" value="2">
+					<label for="star-2" title="Оценка «2»"></label>    
+					<input type="radio" id="star-1" name="rating" value="1">
+					<label for="star-1" title="Оценка «1»"></label>
+					<p class="rating-area__text text">Поставьте оценку</p>
+				</div>
+				<textarea name="" id="" cols="30" rows="10" class="form__input form__textarea form-comment__textarea" placeholder="Напишите отзыв "></textarea>
+				<a href="#" class="form__url form-comment__url text--blue text--tag-1">Нажимая на кнопку «Оставить отзыв» ,
+					вы принимаете условия  Пользовательского
+					соглашения и Политики конфиденциальности.</a>
+				<button class="form-comment__btn form__btn main-btn text--button">Оставить отзыв</button>
+			</form>
 		</div>
 	 </div>
 	<script src="js/scripts.min.js"></script>

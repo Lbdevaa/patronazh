@@ -34,6 +34,7 @@ gulp.task("js", function () {
         "app/libs/jquery/dist/jquery.min.js",
         "app/libs/slick/slick.min.js",
         "app/libs/magnific-popup/jquery.magnific-popup.min.js",
+        "app/libs/input-mask/jquery.inputmask.min.js",
         "app/js/common.js", // Always at the end
       ])
       .pipe(concat("scripts.min.js"))

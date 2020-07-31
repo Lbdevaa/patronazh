@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Контакты</title>
+	<title>Регистрация</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
@@ -41,7 +41,7 @@
 						<ul class="second-nav">
 							<li class="second-nav__item"><a href="about.html" class="second-nav__url">О сервисе</a></li>
 							<li class="second-nav__item"><a href="reviews.html" class="second-nav__url ">Отзывы</a></li>
-							<li class="second-nav__item"><a href="contacts.html" class="second-nav__url active">Контакты</a></li>
+							<li class="second-nav__item"><a href="contacts.html" class="second-nav__url ">Контакты</a></li>
 							<li class="second-nav__item"><a href="help.html" class="second-nav__url">Помощь</a></li> 
 						</ul>
 					</li>
@@ -99,7 +99,7 @@
 				<div class="mobile-menu__box grid"> 	
 					<ul class="mobile-menu__list">
 						<li class="mobile-menu__item"><a href="/" class="mobile-menu__url ">Главная</a></li>
-						<li class="mobile-menu__item"><a href="specialists.html" class="mobile-menu__url active">Специалисты</a></li>
+						<li class="mobile-menu__item"><a href="specialists.html" class="mobile-menu__url ">Специалисты</a></li>
 						<li class="mobile-menu__item"><a href="give.html" class="mobile-menu__url">Отдам даром</a> </li>
 						<li class="mobile-menu__item"><a href="use.html" class="mobile-menu__url">Как пользоваться</a> </li>
 						<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__url">О сервисе</a> </li>
@@ -124,60 +124,52 @@
 		<div class="container">
 			<a class="breadcrumbs__url" href="http://geo.remote24.ru/">Главная</a>
 			<p class="breadcrumbs__separator">•</p>
-			<p class="breadcrumbs__text text--tag-1">Контакты</p>
+			<p class="breadcrumbs__text text--tag-1">Регистрация</p>
 		</div>
 	</section>
-	 <section class="contacts-page">
-		 <div class="container grid">
-				<h2 class="contacts-page__title text--h2 text--blue">Контакты</h2> 
-				<form action="" class="form contacts-page__form">
-					<h4 class="form__title text--h4"> <span class="text--blue">Напишите нам</span>, если у вас возник вопрос</h4>
-					<div class="form__fields grid"> 
-						<div class="form__field">
-							<label for="fio" class="form__label">Имя Фамилия</label>
-							<input name ="fio" type="text" class="form__input text" placeholder="Имя Фамилия" required> 
-						</div>
-						<div class="form__field">	
-							<label for="" class="form__label">Ваш e-mail</label>
-							<input name ="email" type="text" class="form__input text" placeholder="help@mail.ru"> 
-						</div>
-						<div class="form__field form__field--area">
-							<label class="form__label" for="question">Ваш вопрос</label>
-							<textarea name="question" id="" cols="30" rows="10" class="form__textarea form__input text" placeholder="Напишите нам, если у вас возник вопрос" required></textarea>
-						</div>
-					</div>
-					<a href="#" class="form__url text--blue text--tag-1">При нажатии на кнопку «Задать вопрос» , вы принимаете условия  Пользовательского соглашения и Политики конфиденциальности</a>
-					<button class="main-btn form__btn text--button">Задать вопрос</button>
-				</form> 
-				<div class="info-box contacts-page__info-box grid">
-					<div class="info contacts-page__info">
-						<h4 class="info__title text--h4">Техническая поддержка:</h4>
-						<a href="tel:+78124544585" class="info__link text"><i class="icon-phone"></i> 8 (800) 233-33-33</a>
-						<a href="mailto:top@russia.ru" class="info__link text"><i class="icon-mail"></i> top@russia.ru</a>
-					</div>
-					<div class="info contacts-page__info">
-						<h4 class="info__title text--h4">Сотрудничество:</h4>
-						<a href="tel:+78124544585" class="info__link text"><i class="icon-phone"></i> 8 (800) 233-33-33</a>
-						<a href="mailto:top@russia.ru" class="info__link text"><i class="icon-mail"></i> offer@russia.ru</a>
-					</div>
-					<div class="info contacts-page__info">
-						<h4 class="info__title text--h4">Наш адрес:</h4>
-						 <p class="info__link text"><i class="icon-geo"></i> г. Екатеринбург, ул Малышева 76 </p>
-					</div>
+	<section class="registry">
+		<div class="container">
+			<h2 class="registry__title section-title text--h2">Пройдите регистрацию личного кабинета</h2>
+			
+			<form action="" class="form form-registry">
+				<p class="form-registry__title text--h6">Зарегистрироваться как:</p>
+				<div class="form-registry__checks">
+					<label for="" class="form-registry__label aside__label text--menu grid">
+						<input type="checkbox" class="form-registry__input-check aside__input-check"> 
+						<span>Соискатель (ищу работу)</span>
+					</label>
+					<label for="" class="form-registry__label aside__label text--menu grid">
+						<input type="checkbox" class="form-registry__input-check aside__input-check"> 
+						<span>Ищу специалиста</span>
+					</label>
 				</div>
-		 </div>
-	 </section>
-	
-	<section class="notice-now notice-now--about">
-		<div class="container grid">
-			<div class="notice-now__block-text"> 
-				<h3 class="notice-now__title text--h3">Попробуйте воспользоваться сервисом прямо сейчас</h3> 
-				<a href="" class="notice-now__btn main-btn main-btn--white">Создать резюме</a>
-				<a href="" class="notice-now__btn main-btn main-btn--white">Найти специалиста</a>
-			</div>
-			<img src="img/hospice.svg" alt="" class="notice-now__img img-responsive">
+					<p class="form-registry__title text--h6">Ваши данные:</p>
+				<div class="form-registry__fields form__fields grid"> 
+					<div class="form__field">
+						<label for="fio" class="form__label form-registry__label">Имя</label>
+						<input name ="name" type="text" class="form__input text" placeholder="Имя" required> 
+					</div>
+					<div class="form__field">
+						<label for="fio" class="form__label form-registry__label">Фамилия</label>
+						<input name ="second-name" type="text" class="form__input text" placeholder="Фамилия" required> 
+					</div>
+					<div class="form__field">	
+						<label for="" class="form__label form-registry__label">Ваш e-mail</label>
+						<input name ="email" type="text" class="form__input text" placeholder="help@mail.ru"> 
+					</div>
+					<div class="form__field">	
+						<label for="" class="form__label form-registry__label">Ваш номер телефона</label>
+						<input name ="phone" type="text" class="form__input text" placeholder="+7 (___) ___-__-__"> 
+					</div>
+					 
+				</div>
+				<a href="#" class="form__url form-registry__url text--blue text--tag-1">При нажатии на кнопку «Задать вопрос» , вы принимаете условия  Пользовательского соглашения и Политики конфиденциальности</a>
+				<button class="form-registry__btn main-btn form__btn text--button">Зарегестрироваться</button>
+			</form> 
 		</div>
 	</section>
+	  
+	 
 	<footer class="footer">  
 		<div class="container grid"> 
 			<a href="#" class="arrow-on-top"><img alt="" src="img/arrow-on-top.svg" class="arrow-on-top__img"></a>

@@ -87,4 +87,11 @@ $(function () {
 
   //input mask phone
   $("input[name*='phone']").inputmask("+7 (999) 999-99-99");
+
+  //input image profile lk
+
+  $(".form-data__file-btn>input").change(function () {
+    if ($(this).val() != "") $(this).prev().text("Загружено");
+    else $(this).prev().text("Загрузить фото");
+  });
 });

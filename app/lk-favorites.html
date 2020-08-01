@@ -5,7 +5,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Отдам даром</title>
+	<title>Избранные</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 
@@ -35,7 +35,7 @@
 				<ul class="nav">
 					<li class="nav__item"><a href="/" class="nav__url ">Главная</a></li>
 					<li class="nav__item"><a href="specialists.html " class="nav__url ">Специалисты</a></li>
-					<li class="nav__item"><a href="give.html" class="nav__url active">Отдам даром</a></li>
+					<li class="nav__item"><a href="give.html" class="nav__url">Отдам даром</a></li>
 					<li class="nav__item"><a href="use.html" class="nav__url">Как пользоваться</a></li>  
 					<li class="nav__item arrow-more"><a href="#" class="nav__url">Ещё</a>
 						<ul class="second-nav">
@@ -46,11 +46,11 @@
 						</ul>
 					</li>
 				</ul>
-				<div class="autorize">
+				<div class="autorize hide">
 					<a href="#" class="autorize__url">Регистрация</a>
 					<a href="#login" class="autorize__url open-popup">Вход</a>
 				</div>
-				<div class="autorized flex">
+				<div class="autorized flex show">
 					<a href="" class="autorized__url">
 						<!-- <i class="icon-heart"></i> -->
 						<img src="icons/heart.svg" alt="" class="autorized__img img-responsive">
@@ -72,11 +72,11 @@
 	<header class="header--mobile">
 		<div class="container grid">
 			<a href="" class="header__logo-box"><img src="img/logo.png" alt="" class="header__logo img-responsive"></a>
-			<div class="autorize">
+			<div class="autorize hide">
 				<a href="#login" class="autorize__url open-popup">Вход</a>
 				<a href="#" class="autorize__url">Регистрация</a>
 			</div>
-			<div class="autorized flex">
+			<div class="autorized flex show">
 				<a href="" class="autorized__url">
 					<!-- <i class="icon-heart"></i> -->
 					<img src="icons/heart.svg" alt="" class="autorized__img img-responsive">
@@ -99,7 +99,7 @@
 				<div class="mobile-menu__box grid"> 	
 					<ul class="mobile-menu__list">
 						<li class="mobile-menu__item"><a href="/" class="mobile-menu__url ">Главная</a></li>
-						<li class="mobile-menu__item"><a href="specialists.html" class="mobile-menu__url active">Специалисты</a></li>
+						<li class="mobile-menu__item"><a href="specialists.html" class="mobile-menu__url ">Специалисты</a></li>
 						<li class="mobile-menu__item"><a href="give.html" class="mobile-menu__url">Отдам даром</a> </li>
 						<li class="mobile-menu__item"><a href="use.html" class="mobile-menu__url">Как пользоваться</a> </li>
 						<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__url">О сервисе</a> </li>
@@ -124,299 +124,205 @@
 		<div class="container">
 			<a class="breadcrumbs__url" href="http://geo.remote24.ru/">Главная</a>
 			<p class="breadcrumbs__separator">•</p>
-			<p class="breadcrumbs__text text--tag-1">Отдам даром</p>
+			<p class="breadcrumbs__text text--tag-1">Личный кабинет</p>
 		</div>
 	</section>
-	<section class="notice notice--specialists">
-		<div class="container">
-			<div class="notice__box">
-				<p class="notice__text text--h6">Чтобы разместить резюме или написать кандидату — войдите в личный кабинет</p>
-				<a href="#login" class="main-btn main-btn--white notice__btn open-popup">Личный кабинет</a>
-			</div>
-		</div>
-	</section>
-	<div class="specialists-inner">
-		<div class="container grid">
-			<a href="#" class="specialists-inner__btn main-btn ">Фильтр товаров</a>
-			<aside class="aside specialists-inner__aside">
-				<div class="aside__filter"> 
-					<div class="aside__block">
-						<p class="aside__block-title text--h6">Отдают даром:</p>
-						<label for="" class="aside__label text--menu grid">
-							<input type="checkbox" class="aside__input-check"> 
-							<span>Памперсы</span>
-						</label>
-						<label for="" class="aside__label text--menu grid">
-							<input type="checkbox" class="aside__input-check"> 
-							<span>Инвалидные
-								коляски</span>
-						</label>
-						<label for="" class="aside__label text--menu grid">
-							<input type="checkbox" class="aside__input-check"> 
-							<span>Ходунки</span>
-						</label>
-						<label for="" class="aside__label text--menu grid">
-							<input type="checkbox" class="aside__input-check"> 
-							<span>Кресла-туалеты</span>
-						</label>
-						<label for="" class="aside__label text--menu grid">
-							<input type="checkbox" class="aside__input-check"> 
-							<span>Костыли-трости</span>
-						</label>
-					</div>
-					<div class="aside__block">
-						<p class="aside__block-title text--h6">Наличие фото:</p>
-						<label for="" class="aside__label text--menu grid">
-							<input type="checkbox" class="aside__input-check"> 
-							<span>С фото</span>
-						</label>
-						<label for="" class="aside__label text--menu grid">
-							<input type="checkbox" class="aside__input-check"> 
-							<span>Можно без фото</span>
-						</label>  
-					</div>
-					<div class="aside__block">
-						<p class="aside__block-title text--h6">Состояние:</p>
-						<label for="" class="aside__label text--menu grid">
-							<input type="checkbox" class="aside__input-check"> 
-							<span>Любое</span>
-						</label>
-						<label for="" class="aside__label text--menu grid">
-							<input type="checkbox" class="aside__input-check"> 
-							<span>Приемлемое</span>
-						</label> 
-						<label for="" class="aside__label text--menu grid">
-							<input type="checkbox" class="aside__input-check"> 
-							<span>Хорошее</span>
-						</label> 
-						<label for="" class="aside__label text--menu grid">
-							<input type="checkbox" class="aside__input-check"> 
-							<span>Только новое</span>
-						</label>  
-					</div>
-					 
+	 
+	<div class="lk-inner">
+		<div class="container grid"> 
+			<aside class="aside aside--lk">
+			 <div class="aside__user">
+				 <img src="img/user-1.png" alt="" class="aside__user-img img-responsive">
+				 <p class="aside__user-name text--h6">Мария Иванова, 32 года</p>
+				 <div class="aside__rating advert__rating ">
+						<svg xmlns="http://www.w3.org/2000/svg" class="advert__star fill" viewBox="0 0 28 27" fill="none">
+							<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"></path>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" class="advert__star fill" viewBox="0 0 28 27" fill="none">
+						<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"></path>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" class="advert__star fill" viewBox="0 0 28 27" fill="none">
+						<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"></path>
+					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" class="advert__star fill" viewBox="0 0 28 27" fill="none">
+						<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"></path>
+					</svg> 
+					<svg xmlns="http://www.w3.org/2000/svg" class="advert__star" viewBox="0 0 28 27" fill="none">
+						<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"></path>
+					</svg>
 				</div>
+				<div class="aside__links-box">
+					<a href="/lk-info.html" class="aside__link text--button">Личная информация</a>
+					<a href="/lk-messages.html" class="aside__link text--button">Сообщения</a>
+					<a href="/lk-give.html" class="aside__link text--button">Отдам даром</a>
+					<a href="/lk-favorites.html" class="aside__link text--button active">Избранные</a>
+					<a href="/lk-review.html" class="aside__link text--button">Оставить отзыв</a>
+				</div>
+				<div class="aside__links-box">
+					<a href="/lk-settings.html" class="aside__link text--button">Настройки</a> 
+					<a href="/lk-help.html" class="aside__link text--button">Техническая поддержка</a> 
+					<a href="/?act=logout" class="aside__link text--button">Выйти из кабинета</a> 
+				</div>
+				<a href="/lk-advert.html" class="aside__btn main-btn text--button">Подать объявление</a>
+			 </div>
 			</aside>
-			<section class="specialists-ads give-ads">
-				<div class="sort specialists-ads__sort grid">
-					<a href="#" class="sort__btn main-btn active">Сначало бесплатные</a>
-					<a href="#" class="sort__btn main-btn">По состоянию</a>
-					<a href="#" class="sort__btn main-btn">По дате публикации</a> 
+			<section class="lk-ads"> 
+				<h2 class="lk-ads__title section__title text--h2">Избранные объявления:</h2>
+				<div class="ads ads--lk ads--specialists ads--give grid">
+					<div class="advert grid">
+						<div class="advert__product-photo grid">  
+							<img src="img/product-1.png" alt="" class="advert__product-img">   
+							<img src="img/product-1.png" alt="" class="advert__product-img">   
+							<img src="img/product-1.png" alt="" class="advert__product-img">   
+							<img src="" alt="" class="advert__product-img">   
+						</div> 
+						<div class="advert__info grid">
+							<div class="advert__info-title"> 
+								<p class="advert__name text--h6">Коляска инвалидная</p>
+								<a href="#" class="advert__like advert__like--lk-favorites-mobile  advert__like--mobile active">
+									<i class="icon-heart"></i>
+								</a>
+							</div>
+							<div class="advert__short-spec-box">
+								<p class="advert__short-spec grid text">Город: <span class="text--button">Екатеринбург</span></p>
+								<p class="advert__short-spec grid text">Доставка:: <span class="text--button">Нет</span></p>
+								<p class="advert__short-spec grid text">Цена: <span class="text--button">Даром</span></p>
+								<p class="advert__short-spec grid text">Пользовались: <span class="text--button">3 года</span></p>
+								<p class="advert__short-spec grid text">Состояние: <span class="text--button">Приемлемое</span></p>
+							</div>
+						
+						</div>
+						<div class="advert__short grid">
+							<a href="#" class="advert__like advert__like--favorites active">
+								<i class="icon-heart"></i>
+							</a>
+								<a href="#" class="advert__more-url advert__more-url--mobile text">Посмотреть больше данных  </a>
+								<div class="advert__btns"> 
+									<a href="#" class="advert__btn main-btn">Получить контакты</a>
+									<a href="" class="advert__btn main-btn">Написать сообщение</a>
+								</div>
+								<a href="#" class="advert__more-url text  ">Посмотреть больше данных  </a>
+						</div>
+						<div class="advert__more-info advert__more-info--lk-favorites"> 
+							<div class="advert__more-box">
+								<p class="advert__more-title text--button">Дополнительная информация:</p>
+								<p class="advert__short-spec grid text"> Адрес: <span class="text--button">Ул. Бардина д.18</span></p>
+								<p class="advert__short-spec grid text">Поломки: <span class="text--button">Подлокотники</span></p>
+								<p class="advert__short-spec grid text">Количество хохяев: <span class="text--button">Один</span></p>
+								<p class="advert__short-spec grid text">Отправка в другой город: <span class="text--button">За ваш счёт</span></p>
+							</div>
+							<div class="advert__more-box">
+								<p class="advert__more-title text--button">Доп. критерии:</p>
+								<div class="advert__more-spec-box grid">
+									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+									<p class="advert__more-spec text--menu">  Критерий</p>
+								</div>
+								<div class="advert__more-spec-box grid">
+									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+									<p class="advert__more-spec text--menu">  Критерий</p>
+								</div>
+								<div class="advert__more-spec-box grid">
+									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+									<p class="advert__more-spec text--menu">  Критерий</p>
+								</div>
+								<div class="advert__more-spec-box grid">
+									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+									<p class="advert__more-spec text--menu">  Критерий</p>
+								</div>
+							</div>
+						</div>
+						<div class="advert__btns--mobile">
+							<a href="#" class="advert__btn main-btn">Получить контакты</a>
+							<a href="" class="advert__btn main-btn">Написать сообщение</a>
+						</div>
+						
+					</div> 
+					<div class="advert grid">
+						<div class="advert__user-photo"> 
+							<div class="advert__img-box">
+								<img src="img/user-1.png" alt="" class="advert__img">
+							</div>
+							
+							<a href="#" class="advert__like advert__like--mobile active">
+								<i class="icon-heart"></i>
+							</a>
+						</div> 
+						<div class="advert__info grid">
+							<div class="advert__info-title"> 
+								<p class="advert__name text--h6">Мария Иванова, 32 года</p>
+							 
+							</div>
+							<div class="advert__short-spec-box">
+								<p class="advert__short-spec grid text">Город: <span class="text--button">Екатеринбург</span></p> 
+								<p class="advert__short-spec grid text">Опыт работы: <span class="text--button">3 года</span></p>
+								<p class="advert__short-spec grid text">Цена: <span class="text--button">200 руб/час</span></p> 
+								<p class="advert__short-spec grid text">Отзывы: <span class="advert__short-reviews"> <a href="" class="text--button text--blue">+ 11</a><a href="" class="text--button">- 0</a></span></p>
+							</div>
+							<div class="advert__rating">
+								<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+									<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+								<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+								<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+							</svg>
+							<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star fill" viewBox="0 0 28 27" fill="none">
+								<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+							</svg> 
+							<svg xmlns="http://www.w3.org/2000/svg"  class="advert__star" viewBox="0 0 28 27" fill="none">
+								<path d="M16.8274 9.77203C16.9625 10.182 17.3454 10.459 17.7771 10.459L26.8863 10.459L19.5292 15.728C19.1737 15.9826 19.0248 16.4387 19.1617 16.8541L21.9795 25.4028L14.5823 20.105C14.2341 19.8556 13.7659 19.8556 13.4177 20.105L6.02047 25.4028L8.83828 16.8541C8.97518 16.4387 8.82633 15.9826 8.4708 15.728L1.11373 10.459L10.2229 10.459C10.6546 10.459 11.0375 10.182 11.1726 9.77203L14 1.19437L16.8274 9.77203Z" stroke="#108DE7" stroke-width="2" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						
+						</div>
+						<div class="advert__short grid">
+							<a href="#" class="advert__like advert__like--favorites active">
+								<i class="icon-heart"></i>
+							</a>
+								<a href="#" class="advert__more-url advert__more-url--mobile text">Посмотреть больше данных  </a>
+								<div class="advert__btns"> 
+									<a href="#" class="advert__btn main-btn">Получить контакты</a>
+									<a href="" class="advert__btn main-btn">Написать сообщение</a>
+								</div>
+								<a href="#" class="advert__more-url text  ">Посмотреть больше данных  </a>
+						</div>
+						<div class="advert__more-info advert__more-info--lk-favorites "> 
+							<div class="advert__more-box">
+								<p class="advert__more-title text--button">Дополнительная информация:</p>
+								<p class="advert__short-spec grid text"> Адрес: <span class="text--button">Ул. Бардина д.18</span></p>
+								<p class="advert__short-spec grid text">Поломки: <span class="text--button">Подлокотники</span></p>
+								<p class="advert__short-spec grid text">Количество хохяев: <span class="text--button">Один</span></p>
+								<p class="advert__short-spec grid text">Отправка в другой город: <span class="text--button">За ваш счёт</span></p>
+							</div>
+							<div class="advert__more-box">
+								<p class="advert__more-title text--button">Доп. критерии:</p>
+								<div class="advert__more-spec-box grid">
+									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+									<p class="advert__more-spec text--menu">  Критерий</p>
+								</div>
+								<div class="advert__more-spec-box grid">
+									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+									<p class="advert__more-spec text--menu">  Критерий</p>
+								</div>
+								<div class="advert__more-spec-box grid">
+									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+									<p class="advert__more-spec text--menu">  Критерий</p>
+								</div>
+								<div class="advert__more-spec-box grid">
+									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
+									<p class="advert__more-spec text--menu">  Критерий</p>
+								</div>
+							</div>
+						</div>
+						<div class="advert__btns--mobile">
+							<a href="#" class="advert__btn main-btn">Получить контакты</a>
+							<a href="" class="advert__btn main-btn">Написать сообщение</a>
+						</div>
+						
+					</div>
 				</div> 
-				<div class="ads ads--specialists ads--give grid">
-					<div class="advert grid">
-						<div class="advert__product-photo grid">  
-							<img src="img/product-1.png" alt="" class="advert__product-img"> 
-							<img src="img/product-1.png" alt="" class="advert__product-img">
-							<img src="img/product-1.png" alt="" class="advert__product-img">
-							<img src="img/product-1.png" alt="" class="advert__product-img">   
-						</div> 
-						<div class="advert__info grid">
-							<div class="advert__info-title"> 
-								<p class="advert__name text--h6">Коляска инвалидная</p>
-								<a href="#" class="advert__like advert__like--give">
-									<i class="icon-heart"></i>
-								</a>
-							</div>
-							<div class="advert__desc-box">
-								<p class="advert__desc-title text--button">Описание товара:</p>
-								<p class="advert__desc text">Рыба текст. Специалисты, хорошо выполняющие работу получают отзывы и могут постоянно находить работу. Работодатели могут найти хорошего специалиста по отзывам. Работодатели могут найти хорошего специалиста по отзывам.</p>
-							</div>
-							<a href="#" class="advert__more-url text  ">Посмотреть больше данных  </a>
-						</div>
-						<div class="advert__short">
-							<div class="advert__short-spec-box">
-								<p class="advert__short-spec grid text">Город: <span class="text--button">Екатеринбург</span></p>
-								<p class="advert__short-spec grid text">Доставка:: <span class="text--button">Нет</span></p>
-								<p class="advert__short-spec grid text">Цена: <span class="text--button">Даром</span></p>
-								<p class="advert__short-spec grid text">Пользовались: <span class="text--button">3 года</span></p>
-								<p class="advert__short-spec grid text">Состояние: <span class="text--button">Приемлемое</span></p>
-							</div>
-								<a href="#" class="advert__more-url advert__more-url--mobile text">Посмотреть больше данных  </a>
-								<div class="advert__btns"> 
-									<a href="#" class="advert__btn main-btn">Получить контакты</a>
-									<a href="" class="advert__btn main-btn">Написать сообщение</a>
-								</div>
-						</div>
-						<div class="advert__more-info  "> 
-							<div class="advert__more-box">
-								<p class="advert__more-title text--button">Дополнительная информация:</p>
-								<p class="advert__short-spec grid text"> Адрес: <span class="text--button">Ул. Бардина д.18</span></p>
-								<p class="advert__short-spec grid text">Поломки: <span class="text--button">Подлокотники</span></p>
-								<p class="advert__short-spec grid text">Количество хохяев: <span class="text--button">Один</span></p>
-								<p class="advert__short-spec grid text">Отправка в другой город: <span class="text--button">За ваш счёт</span></p>
-							</div>
-							<div class="advert__more-box">
-								<p class="advert__more-title text--button">Доп. критерии:</p>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-							</div>
-						</div>
-						<div class="advert__btns--mobile">
-							<a href="#" class="advert__btn main-btn">Получить контакты</a>
-							<a href="" class="advert__btn main-btn">Написать сообщение</a>
-						</div>
-						
-					</div>
-					
-				</div>
-				<div class="ads ads--specialists ads--give grid">
-					<div class="advert grid">
-						<div class="advert__product-photo grid">  
-							<img src="img/product-1.png" alt="" class="advert__product-img"> 
-							<img src="img/product-1.png" alt="" class="advert__product-img">
-							<img src="img/product-1.png" alt="" class="advert__product-img">
-							<img src="img/product-1.png" alt="" class="advert__product-img">   
-						</div> 
-						<div class="advert__info grid">
-							<div class="advert__info-title"> 
-								<p class="advert__name text--h6">Коляска инвалидная</p>
-								<a href="#" class="advert__like advert__like--give">
-									<i class="icon-heart"></i>
-								</a>
-							</div>
-							<div class="advert__desc-box">
-								<p class="advert__desc-title text--button">Описание товара:</p>
-								<p class="advert__desc text">Рыба текст. Специалисты, хорошо выполняющие работу получают отзывы и могут постоянно находить работу. Работодатели могут найти хорошего специалиста по отзывам. Работодатели могут найти хорошего специалиста по отзывам.</p>
-							</div>
-							<a href="#" class="advert__more-url text  ">Посмотреть больше данных  </a>
-						</div>
-						<div class="advert__short">
-							<div class="advert__short-spec-box">
-								<p class="advert__short-spec grid text">Город: <span class="text--button">Екатеринбург</span></p>
-								<p class="advert__short-spec grid text">Доставка:: <span class="text--button">Нет</span></p>
-								<p class="advert__short-spec grid text">Цена: <span class="text--button">Даром</span></p>
-								<p class="advert__short-spec grid text">Пользовались: <span class="text--button">3 года</span></p>
-								<p class="advert__short-spec grid text">Состояние: <span class="text--button">Приемлемое</span></p>
-							</div>
-								<a href="#" class="advert__more-url advert__more-url--mobile text">Посмотреть больше данных  </a>
-								<div class="advert__btns"> 
-									<a href="#" class="advert__btn main-btn">Получить контакты</a>
-									<a href="" class="advert__btn main-btn">Написать сообщение</a>
-								</div>
-						</div>
-						<div class="advert__more-info  "> 
-							<div class="advert__more-box">
-								<p class="advert__more-title text--button">Дополнительная информация:</p>
-								<p class="advert__short-spec grid text"> Адрес: <span class="text--button">Ул. Бардина д.18</span></p>
-								<p class="advert__short-spec grid text">Поломки: <span class="text--button">Подлокотники</span></p>
-								<p class="advert__short-spec grid text">Количество хохяев: <span class="text--button">Один</span></p>
-								<p class="advert__short-spec grid text">Отправка в другой город: <span class="text--button">За ваш счёт</span></p>
-							</div>
-							<div class="advert__more-box">
-								<p class="advert__more-title text--button">Доп. критерии:</p>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-							</div>
-						</div>
-						<div class="advert__btns--mobile">
-							<a href="#" class="advert__btn main-btn">Получить контакты</a>
-							<a href="" class="advert__btn main-btn">Написать сообщение</a>
-						</div>
-						
-					</div>
-					
-				</div>
-				<div class="ads ads--specialists ads--give grid">
-					<div class="advert grid">
-						<div class="advert__product-photo grid">  
-							<img src="img/product-1.png" alt="" class="advert__product-img"> 
-							<img src="img/product-1.png" alt="" class="advert__product-img">
-							<img src="img/product-1.png" alt="" class="advert__product-img">
-							<img src="img/product-1.png" alt="" class="advert__product-img">   
-						</div> 
-						<div class="advert__info grid">
-							<div class="advert__info-title"> 
-								<p class="advert__name text--h6">Коляска инвалидная</p>
-								<a href="#" class="advert__like advert__like--give">
-									<i class="icon-heart"></i>
-								</a>
-							</div>
-							<div class="advert__desc-box">
-								<p class="advert__desc-title text--button">Описание товара:</p>
-								<p class="advert__desc text">Рыба текст. Специалисты, хорошо выполняющие работу получают отзывы и могут постоянно находить работу. Работодатели могут найти хорошего специалиста по отзывам. Работодатели могут найти хорошего специалиста по отзывам.</p>
-							</div>
-							<a href="#" class="advert__more-url text  ">Посмотреть больше данных  </a>
-						</div>
-						<div class="advert__short">
-							<div class="advert__short-spec-box">
-								<p class="advert__short-spec grid text">Город: <span class="text--button">Екатеринбург</span></p>
-								<p class="advert__short-spec grid text">Доставка:: <span class="text--button">Нет</span></p>
-								<p class="advert__short-spec grid text">Цена: <span class="text--button">Даром</span></p>
-								<p class="advert__short-spec grid text">Пользовались: <span class="text--button">3 года</span></p>
-								<p class="advert__short-spec grid text">Состояние: <span class="text--button">Приемлемое</span></p>
-							</div>
-								<a href="#" class="advert__more-url advert__more-url--mobile text">Посмотреть больше данных  </a>
-								<div class="advert__btns"> 
-									<a href="#" class="advert__btn main-btn">Получить контакты</a>
-									<a href="" class="advert__btn main-btn">Написать сообщение</a>
-								</div>
-						</div>
-						<div class="advert__more-info  "> 
-							<div class="advert__more-box">
-								<p class="advert__more-title text--button">Дополнительная информация:</p>
-								<p class="advert__short-spec grid text"> Адрес: <span class="text--button">Ул. Бардина д.18</span></p>
-								<p class="advert__short-spec grid text">Поломки: <span class="text--button">Подлокотники</span></p>
-								<p class="advert__short-spec grid text">Количество хохяев: <span class="text--button">Один</span></p>
-								<p class="advert__short-spec grid text">Отправка в другой город: <span class="text--button">За ваш счёт</span></p>
-							</div>
-							<div class="advert__more-box">
-								<p class="advert__more-title text--button">Доп. критерии:</p>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-								<div class="advert__more-spec-box grid">
-									<img src="img/icon-check.svg" alt="" class="advert__icon-check">
-									<p class="advert__more-spec text--menu">  Критерий</p>
-								</div>
-							</div>
-						</div>
-						<div class="advert__btns--mobile">
-							<a href="#" class="advert__btn main-btn">Получить контакты</a>
-							<a href="" class="advert__btn main-btn">Написать сообщение</a>
-						</div>
-						
-					</div>
-					
-				</div>
-				
 			</section>
 		</div>
 	</div>

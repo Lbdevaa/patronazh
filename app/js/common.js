@@ -94,4 +94,13 @@ $(function () {
     if ($(this).val() != "") $(this).prev().text("Загружено");
     else $(this).prev().text("Загрузить фото");
   });
+
+  //inputs lk advert field bad
+
+  $("#bad").click(function () {
+    $("#bad2").val("");
+  });
+  $("#bad2").click(function () {
+    $("#bad").prop("checked", false);
+  });
 });

@@ -647,6 +647,43 @@
 		&__btn
 			width: 100%
 
+	.lk-advert
+		padding: 20px 0
+		&__title
+			font-size: em(36px)
+			margin: 0 0 em(15px)
+
+	.form-advert
+		&__fields
+			grid-template-columns: 1fr
+			margin-bottom: 30px
+			&:last-of-type
+				grid-template-columns: 1fr
+		&__title
+			font-size: em(24px)
+		&__input
+			margin: 0
+		&__radio-btns input[type=radio]+label
+			margin: 0
+		&__btn
+			padding: em(8px) 0
+			text-align: center
+			width: 100%
+			max-width: 100%
+			display: block
+			margin: 0
+		&__url
+			max-width: 100%
+		&__radio-btns--mob
+			display: grid
+			grid-template-columns: max-content max-content
+			grid-gap: 10px
+			> label.text
+				grid-row: 1
+				padding: 13px !important
+				max-width: max-content
+			input[name="bad"]
+				grid-row: 1
 	/**/
 
 /* Extra Small Devices, Phones */

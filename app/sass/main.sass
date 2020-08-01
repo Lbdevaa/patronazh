@@ -1465,4 +1465,56 @@ a
       left: 0
       cursor: pointer
 
+.lk-advert__form
+  margin-bottom: 40px
+
+.form-advert
+  &__radio-btns
+    input:focus .form-advert__radio-btns label
+      width: 300px
+    input[type=radio]
+      opacity: 0
+      width: 0.1px
+    input[type=radio]+label
+      display: inline-block
+      padding: em(13px) em(22px)
+      cursor: pointer
+      border: 2px solid #b6b6ba4d
+      border-radius: 5px
+      margin: 0 em(16px) 0 0
+    input[type=radio]:checked+label
+      color: $dark
+      font-weight: 600
+      background-color: $blue
+      color: #ffffff
+    input[name="bad"]
+      max-width: 240px
+  &__textarea
+    height: 140px
+  &__input
+    max-width: 325px
+    &-price-box
+      position: relative
+      width: 325px
+      span::after
+        content: "руб/час"
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translate(0, -50%)
+  &__fields
+    grid-template-columns: 230px 1fr
+    grid-gap: 15px 40px
+    margin-bottom: 40px
+    &:last-of-type
+      grid-template-columns: max-content 1fr
+  &__url
+    max-width: 420px
+    text-decoration: none
+  &__btn
+    padding: em(8px) em(30px)
+    max-width: max-content
+    justify-self: end
+  &__title
+    margin: 0 0 em(15px)
 @import "media" // Всегда в конце

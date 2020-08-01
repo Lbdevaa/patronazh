@@ -229,21 +229,29 @@ a
   &__url
     display: inline-block
     margin-right: 30px
+    width: 26px
+    height: 26px
     &-user
       width: 48px
       height: 48px
       display: inline-block
-  &--mail
-    position: relative
+    &--like
+      background: url(../img/icon-like-blue.svg) no-repeat center center
+      background-size: cover
+    &--mail
+      position: relative
+      background: url(../img/icon-mail-blue.svg) no-repeat center center
   &__mails-box
     position: absolute
     background-color: $pink
     color: #ffffff
-    width: 25px
-    height: 25px
-    font-size: em(12px)
+    width: 15px
+    height: 15px
+    bottom: 0
+    right: 0
+    font-size: em(8px)
     border-radius: 1000em
-    transform: translate(60%, -40%)
+    transform: translate(50%, 0%)
   &__mails
     position: absolute
     left: 50%
@@ -1517,4 +1525,14 @@ a
     justify-self: end
   &__title
     margin: 0 0 em(15px)
+
+.message
+  &__like
+    width: 26px
+    height: 26px
+    display: block
+    background: url('../img/icon-like-blue.svg') no-repeat center center
+    background-size: cover
+    &.active
+      background-image: url('../img/icon-like-pink.svg')
 @import "media" // Всегда в конце

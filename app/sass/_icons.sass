@@ -36,11 +36,14 @@
     @if $filename == mail
         $char: "\E005"
     
-    @if $filename == phone-big
+    @if $filename == more
         $char: "\E006"
     
-    @if $filename == phone
+    @if $filename == phone-big
         $char: "\E007"
+    
+    @if $filename == phone
+        $char: "\E008"
     
     @return $char
 
@@ -64,6 +67,8 @@
     +icon(mail-2)
 .icon-mail
     +icon(mail)
+.icon-more
+    +icon(more)
 .icon-phone-big
     +icon(phone-big)
 .icon-phone

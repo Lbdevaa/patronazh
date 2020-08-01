@@ -663,6 +663,9 @@
 			font-size: em(24px)
 		&__input
 			margin: 0
+			max-width: 100%
+		&__input-price-box
+			width: 100%
 		&__radio-btns input[type=radio]+label
 			margin: 0
 		&__btn
@@ -677,6 +680,7 @@
 		&__radio-btns--mob
 			display: grid
 			grid-template-columns: max-content max-content
+			justify-content: stretch
 			grid-gap: 10px
 			> label.text
 				grid-row: 1

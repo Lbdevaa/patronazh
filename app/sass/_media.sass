@@ -263,6 +263,8 @@
 		>div
 			grid-template-columns: 1fr
 			padding: 0 20px
+		&__aside
+			display: none
 		&__btn
 			position: relative
 			margin-bottom: 20px
@@ -289,7 +291,6 @@
 					background: url(../img/cross-blue.svg) no-repeat center center
 
 	.aside
-		display: none
 		&__filter
 			padding: 0 40px
 			border-bottom: 2px solid $gray
@@ -313,13 +314,15 @@
 			grid-column: 1
 			grid-template-columns: 1fr
 		&__short
-			max-width: 100%
+			width: 100%
 			justify-self: auto
 			&-spec
 				&:last-of-type
 					margin: 0
 				span
 					font-size: em(20px)
+		&__short-reviews a
+			font-size: em(18px)
 		&__desc
 			margin-bottom: 0
 		&__more-box
@@ -334,6 +337,10 @@
 			&--mobile
 				display: block
 				margin: 0
+				&::after
+					transform: translate(0,-50%)
+				&.active::after
+					transform: translate(0,-50%)
 		&__more-title
 			margin-bottom: em(8px)
 		&__btns
@@ -580,6 +587,26 @@
 		&__fields
 			display: block
 
+	// lk 
+	.lk-inner
+		>div
+			grid-template-columns: 1fr
+
+	.aside
+		&--lk
+			padding-top: 20px
+		&__user
+			text-align: center
+			&-img
+				margin: 0 auto 15px
+	.ads
+		&--lk
+			margin: 0
+
+	.lk-ads
+		padding: 20px 0 0
+		&__title
+			font-size: em(36px)
 	/**/
 
 /* Extra Small Devices, Phones */

@@ -612,7 +612,8 @@
 	.lk-inner
 		>div
 			grid-template-columns: 1fr
-
+		&--messages
+			margin: 10px 0
 	.aside
 		&--lk
 			padding-top: 20px
@@ -688,6 +689,59 @@
 				max-width: max-content
 			input[name="bad"]
 				grid-row: 1
+
+	.messages-filter
+		display: grid
+		grid-template-columns: max-content 1fr
+		&__links
+			display: none
+		&__mobile-select
+			display: inline-block
+			vertical-align: top
+			width: 100%
+	.message
+		grid-template-columns: 1fr
+
+		&__wrap
+			grid-template-columns: max-content 1fr
+			grid-gap: 10px
+			&:hover
+				// filter: brightness(0) invert(1)
+				.message__text
+					color: #ffffff
+				.message__more, .message__more--mobile
+					filter: brightness(0) invert(1)
+		&__controls
+			display: none
+		&__user
+			&-img
+				width: 48px
+				height: 48px
+			&-name
+				grid-row: 1
+				grid-column: 1
+			&-short
+				display: none
+			&-info-box
+				grid-template-columns: 1fr max-content
+		&__date
+			grid-row: 1
+			grid-column: 2
+			align-self: end
+			justify-self: end
+			span
+				display: none
+		&__text
+			display: none
+			&--mobile
+				display: block
+				grid-column: 1/3
+		&__more
+			display: none
+			&--mobile
+				display: block
+				grid-row: 1
+				grid-column: 2
 	/**/
 
 /* Extra Small Devices, Phones */

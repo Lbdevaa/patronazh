@@ -1428,6 +1428,8 @@ a
   //lk
 
 .lk-inner
+  &--messages
+    margin-bottom: 50px
   >div
     grid-template-columns: max-content 1fr
     grid-column-gap: 170px
@@ -1437,11 +1439,6 @@ a
 
 .lk-data
   max-width: 520px
-
-  &__list
-
-  &__item
-
   &__form-title
     margin: 0 0 em(15px)
     grid-column: 1/3
@@ -1526,7 +1523,43 @@ a
   &__title
     margin: 0 0 em(15px)
 
+.messages
+  &__box
+    margin-bottom: 20px
+
+.messages-filter
+  margin-bottom: 30px
+  &__check
+    height: 30px
+    // height: 100%
+    width: 30px
+    border-radius: 5px
+    border: 1px solid $gray
+    margin-right: 10px
+  &__links
+    display: inline-block
+    vertical-align: super
+  &__link
+    text-decoration: none
+    padding: em(4px) em(11px)
+    border: 1px solid $gray
+    border-radius: 5px
+    margin-right: 15px
+    transition: ease-in all .3s
+    &.active, &:hover
+      background-color: $blue
+      color: #ffffff
+  &__mobile-select
+    display: none
 .message
+  grid-template-columns: max-content 1fr
+  grid-column-gap: 20px
+  position: relative
+  &__controls
+    justify-items: center
+  &__checkbox
+    width: 20px
+    height: 20px
   &__like
     width: 26px
     height: 26px
@@ -1535,4 +1568,71 @@ a
     background-size: cover
     &.active
       background-image: url('../img/icon-like-pink.svg')
+  &__more
+    width: 20px
+    height: 20px
+    display: block
+    background: url('../img/icon-more.svg') no-repeat center center
+    background-size: cover
+    &--mobile
+      display: none
+      position: absolute
+      right: 15px
+      top: 15px
+      transform: translate(-50%, 50%)
+  &__wrap
+    grid-template-columns: max-content 1fr max-content
+    grid-column-gap: 20px
+    background-color: $lblue
+    padding: 25px
+    border-radius: 5px
+    text-decoration: none
+    transition: ease-in all .3s
+    &:hover
+      background-color: $blue
+      .message__user-info-box, .message__user-price
+        color: #ffffff
+
+      .message__user-rating
+        filter: brightness(0) invert(1)
+
+  &__text
+    font-size: em(18px)
+    line-height: 1.4
+    max-width: 300px
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    margin: 0 0 em(7px)
+    span
+      font-weight: 600
+    &--mobile
+      display: none
+  &__date
+    font-size: em(14px)
+    margin: 0
+    font-family: $FPTBOOK
+  &__user
+    &-img
+      background: url('../img/avatar.png') no-repeat center center
+      background-size: cover
+      width: 64px
+      height: 64px
+      border-radius: 1000em
+    &-name
+      font-size: em(20px)
+      line-height: 1.4
+      font-weight: 600
+      margin: 0
+    &-price
+      margin: 0 0 em(4px)
+      font-size: em(20px)
+      line-height: 1.4
+      font-weight: 600
+    &-rating
+    &-star
+      height: 17px
+      height: 17px
+      &.fill
+        fill: $blue
 @import "media" // Всегда в конце

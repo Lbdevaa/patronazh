@@ -40,7 +40,7 @@
 					<li class="nav__item arrow-more"><a href="#" class="nav__url">Ещё</a>
 						<ul class="second-nav">
 							<li class="second-nav__item"><a href="about.html" class="second-nav__url">О сервисе</a></li>
-							<li class="second-nav__item"><a href="reviews.html" class="second-nav__url">Отзывы</a></li>
+							<li class="second-nav__item"><a href="reviews.html" class="second-nav__url active">Отзывы</a></li>
 							<li class="second-nav__item"><a href="contacts.html" class="second-nav__url">Контакты</a></li>
 							<li class="second-nav__item"><a href="help.html" class="second-nav__url">Помощь</a></li> 
 						</ul>
@@ -97,7 +97,7 @@
 						<li class="mobile-menu__item"><a href="give.html" class="mobile-menu__url">Отдам даром</a> </li>
 						<li class="mobile-menu__item"><a href="use.html" class="mobile-menu__url">Как пользоваться</a> </li>
 						<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__url">О сервисе</a> </li>
-						<li class="mobile-menu__item"><a href="reviews.html" class="mobile-menu__url">Отзывы</a> </li>
+						<li class="mobile-menu__item"><a href="reviews.html" class="mobile-menu__url active">Отзывы</a> </li>
 						<li class="mobile-menu__item"><a href="contacts.html" class="mobile-menu__url">Контакты</a> </li>
 						<li class="mobile-menu__item"><a href="help.html" class="mobile-menu__url">Помощь</a> </li>
 					</ul>
@@ -124,9 +124,18 @@
 	<section class="reviews-page">
 		<div class="container">
 			<h2 class="reviews-page__title text--h2"> <span class="text--blue">Отзывы</span> о нашем сервисе</h2>
-			<div class="reviews-page__sort">
-				<a href="#" class="reviews-page__sort-btn main-btn active">Сначала новые</a>
-				<a href="#" class="reviews-page__sort-btn main-btn active">Показывать по 5шт</a>
+			<div class="reviews-page__sort"> 
+				<select class="reviews-page__sort-btn">  
+					<option value="value" selected disabled>По новизне</option> 
+					<option value="value1">Сначала новые</option> 
+					<option value="value2">Сначала старые</option> 
+					<option value="value3">Сначала </option>  
+				</select>  
+				<select class="reviews-page__sort-btn ">  
+					<option value="value" selected disabled>Показывать кол-во</option> 
+					<option value="value1">Показывать по 5шт</option> 
+					<option value="value2">Показывать по 10шт</option>  
+				</select>  
 			</div>
 			<div class="comments">
 				<div class="comment grid">

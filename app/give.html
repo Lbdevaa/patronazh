@@ -35,7 +35,7 @@
 				<ul class="nav">
 					<li class="nav__item"><a href="/" class="nav__url ">Главная</a></li>
 					<li class="nav__item"><a href="specialists.html " class="nav__url ">Специалисты</a></li>
-					<li class="nav__item"><a href="give.html" class="nav__url">Отдам даром</a></li>
+					<li class="nav__item"><a href="give.html" class="nav__url active">Отдам даром</a></li>
 					<li class="nav__item"><a href="use.html" class="nav__url">Как пользоваться</a></li>  
 					<li class="nav__item arrow-more"><a href="#" class="nav__url">Ещё</a>
 						<ul class="second-nav">
@@ -94,7 +94,7 @@
 					<ul class="mobile-menu__list">
 						<li class="mobile-menu__item"><a href="/" class="mobile-menu__url ">Главная</a></li>
 						<li class="mobile-menu__item"><a href="specialists.html" class="mobile-menu__url ">Специалисты</a></li>
-						<li class="mobile-menu__item"><a href="give.html" class="mobile-menu__url">Отдам даром</a> </li>
+						<li class="mobile-menu__item"><a href="give.html" class="mobile-menu__url active">Отдам даром</a> </li>
 						<li class="mobile-menu__item"><a href="use.html" class="mobile-menu__url">Как пользоваться</a> </li>
 						<li class="mobile-menu__item"><a href="about.html" class="mobile-menu__url">О сервисе</a> </li>
 						<li class="mobile-menu__item"><a href="reviews.html" class="mobile-menu__url">Отзывы</a> </li>
@@ -192,10 +192,22 @@
 				</div>
 			</aside>
 			<section class="specialists-ads give-ads">
-				<div class="sort specialists-ads__sort grid">
-					<a href="#" class="sort__btn main-btn active">Сначало бесплатные</a>
-					<a href="#" class="sort__btn main-btn">По состоянию</a>
-					<a href="#" class="sort__btn main-btn">По дате публикации</a> 
+				<div class="sort specialists-ads__sort grid">  
+					<select class="sort__btn">  
+						<option value="value" selected disabled>По стоимости</option> 
+						<option value="value1">Сначала бесплатные</option> 
+						<option value="value2">Сначала дорогие</option>  
+					</select>  
+					<select class="sort__btn">  
+						<option value="value" selected disabled>По состоянию</option> 
+						<option value="value1">Новое</option> 
+						<option value="value2">Было в использовании</option>  
+					</select>  
+					<select class="sort__btn">  
+						<option value="value" selected disabled>По дате публикации</option> 
+						<option value="value1">Новые</option> 
+						<option value="value2">С конца</option>  
+					</select>  
 				</div> 
 				<div class="ads ads--specialists ads--give grid">
 					<div class="advert grid">
@@ -208,9 +220,7 @@
 						<div class="advert__info grid">
 							<div class="advert__info-title"> 
 								<p class="advert__name text--h6">Коляска инвалидная</p>
-								<a href="#" class="advert__like advert__like--give">
-									<i class="icon-heart"></i>
-								</a>
+								<a href="#" class="advert__like advert__like--give"> </a>
 							</div>
 							<div class="advert__desc-box">
 								<p class="advert__desc-title text--button">Описание товара:</p>
@@ -279,9 +289,7 @@
 						<div class="advert__info grid">
 							<div class="advert__info-title"> 
 								<p class="advert__name text--h6">Коляска инвалидная</p>
-								<a href="#" class="advert__like advert__like--give">
-									<i class="icon-heart"></i>
-								</a>
+								<a href="#" class="advert__like advert__like--give"></a>
 							</div>
 							<div class="advert__desc-box">
 								<p class="advert__desc-title text--button">Описание товара:</p>
